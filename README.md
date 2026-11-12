@@ -5,7 +5,7 @@ Organizations create non-clinical wellness challenges; participants join them, l
 build streaks, unlock badges and compete on leaderboards.
 
 It is built with **only HTML5, CSS3 and vanilla JavaScript (ES6 modules)**. It uses no frameworks, libraries, build tools or backend.
-Charts, icons and illustrations are hand-built SVG.
+Charts, icons and avatars are hand-built SVG; the hero, challenge covers, badges and page illustrations are painted artwork served as optimised WebP.
 
 ---
 

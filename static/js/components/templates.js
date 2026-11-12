@@ -11,6 +11,25 @@ import {
 import { progressBar } from './charts.js';
 import { escapeHTML, icon, formatNumber, formatValue, formatRelativeDay, formatTime, formatDate } from '../utils.js';
 
+/** Built-in covers ship in three widths: name-320.webp, name-640.webp and name.webp (1280px). */
+const COVER_PATTERN = /^(static\/assets\/images\/challenges\/[a-z-]+)\.webp$/;
+
+/**
+ * Responsive <img> for a challenge cover. The browser picks the smallest file that
+ * is still sharp for the slot (`sizes`), so a 96px thumbnail never downloads the
+ * 1280px original. Covers below the fold load lazily; the main cover of a page
+ * should pass `eager: true` so it is fetched first.
+ */
+export function coverImage(src, { sizes = '100vw', eager = false, className = '', width = 1280, height = 720 } = {}) {
+  const match = String(src || '').match(COVER_PATTERN);
+  const srcset = match
+    ? ` srcset="${match[1]}-320.webp 320w, ${match[1]}-640.webp 640w, ${match[1]}.webp 1280w" sizes="${escapeHTML(sizes)}"`
+    : '';
+  const loading = eager ? 'fetchpriority="high"' : 'loading="lazy"';
+  const cls = className ? ` class="${escapeHTML(className)}"` : '';
+  return `<img${cls} src="${escapeHTML(src)}"${srcset} alt="" width="${width}" height="${height}" ${loading} decoding="async">`;
+}
+
 export const challengeUrl = (id) => `challenge.html?id=${encodeURIComponent(id)}`;
 
 export const categoryPill = (category) =>
@@ -46,7 +65,7 @@ export function challengeCard(state, challenge, userId, { index = 0 } = {}) {
   return `
     <article class="challenge-card" data-index="${index}">
       <div class="challenge-card__media">
-        <img src="${escapeHTML(challenge.image)}" alt="" loading="lazy" width="800" height="480">
+        ${coverImage(challenge.image, { sizes: '(max-width: 640px) 92vw, (max-width: 1100px) 46vw, 310px' })}
         <div class="challenge-card__badges">
           ${categoryPill(challenge.category)}
           ${enrolled ? `<span class="status" data-status="joined">${icon('check')} Joined</span>` : statusBadge(status)}
@@ -102,7 +121,7 @@ export function badgeTile(item) {
   return `
     <article class="badge-tile" data-locked="${!unlocked}">
       ${unlocked ? '' : `<span class="badge-tile__lock" aria-hidden="true">${icon('lock')}</span>`}
-      <img src="${escapeHTML(badge.icon)}" alt="" width="72" height="72" loading="lazy">
+      <img src="${escapeHTML(badge.icon)}" alt="" width="72" height="72" loading="lazy" decoding="async">
       <h3>${escapeHTML(badge.name)}</h3>
       <p>${escapeHTML(badge.description)}</p>
       ${unlocked
@@ -113,10 +132,10 @@ export function badgeTile(item) {
 }
 
 /** Friendly empty state with optional action. */
-export function emptyState({ title, text = '', action = '', compact = false, image = 'static/assets/images/backgrounds/empty-state.svg' }) {
+export function emptyState({ title, text = '', action = '', compact = false, image = 'static/assets/images/backgrounds/empty-state.webp' }) {
   return `
     <div class="empty-state ${compact ? 'empty-state--compact' : ''}">
-      <img src="${image}" alt="" width="140" height="105">
+      <img src="${image}" alt="" width="140" height="113" loading="lazy" decoding="async">
       <h3>${escapeHTML(title)}</h3>
       ${text ? `<p>${escapeHTML(text)}</p>` : ''}
       ${action}
@@ -151,7 +170,7 @@ export function personBlock(user, { meta = '', size = '', respectPrivacy = false
   const avatar = hidden ? 'static/assets/images/avatars/avatar-private.svg' : user.avatar;
   return `
     <div class="person">
-      <img class="avatar ${size ? `avatar--${size}` : ''}" src="${escapeHTML(avatar)}" alt="" width="40" height="40" loading="lazy">
+      <img class="avatar ${size ? `avatar--${size}` : ''}" src="${escapeHTML(avatar)}" alt="" width="40" height="40" loading="lazy" decoding="async">
       <div>
         <p class="person__name">${escapeHTML(name)}${isCurrent ? ' <span class="pill">You</span>' : ''}</p>
         ${meta ? `<p class="person__meta">${meta}</p>` : ''}

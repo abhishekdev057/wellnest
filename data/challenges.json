@@ -6,7 +6,7 @@
     "description": "Walk, run, cycle or train your way to 300 active minutes. Every form of movement counts, so pick what you love and keep showing up.",
     "objective": "Accumulate 300 minutes of movement across any combination of walking, running, cycling or exercise sessions.",
     "category": "movement",
-    "image": "static/assets/images/challenges/movement.svg",
+    "image": "static/assets/images/challenges/movement.webp",
     "startDate": "2026-11-05",
     "endDate": "2026-11-18",
     "activityTypes": [
@@ -45,7 +45,7 @@
     "description": "A friendly step challenge that turns commutes, calls and coffee runs into progress. Average roughly 7,000 steps a day to finish strong.",
     "objective": "Walk a total of 150,000 steps during the three-week sprint.",
     "category": "movement",
-    "image": "static/assets/images/challenges/steps.svg",
+    "image": "static/assets/images/challenges/steps.webp",
     "startDate": "2026-11-01",
     "endDate": "2026-11-21",
     "activityTypes": [
@@ -80,7 +80,7 @@
     "description": "Build an easy, lasting hydration routine. Drink at least eight glasses of water on fourteen different days during the month.",
     "objective": "Reach eight glasses of water on 14 separate days.",
     "category": "hydration",
-    "image": "static/assets/images/challenges/hydration.svg",
+    "image": "static/assets/images/challenges/hydration.webp",
     "startDate": "2026-11-03",
     "endDate": "2026-11-30",
     "activityTypes": [
@@ -114,7 +114,7 @@
     "description": "Start each morning with a short meditation or breathing practice. Complete 21 mindful days within four weeks to build a habit that sticks.",
     "objective": "Meditate for at least 10 minutes on 21 different days.",
     "category": "mindfulness",
-    "image": "static/assets/images/challenges/mindfulness.svg",
+    "image": "static/assets/images/challenges/mindfulness.webp",
     "startDate": "2026-10-26",
     "endDate": "2026-11-22",
     "activityTypes": [
@@ -148,7 +148,7 @@
     "description": "Interrupt long sitting sessions with gentle stretching or yoga. Collect 150 minutes of stretch breaks over two weeks.",
     "objective": "Accumulate 150 minutes of stretching or yoga.",
     "category": "healthy-habits",
-    "image": "static/assets/images/challenges/stretch.svg",
+    "image": "static/assets/images/challenges/stretch.webp",
     "startDate": "2026-11-08",
     "endDate": "2026-11-21",
     "activityTypes": [
@@ -183,7 +183,7 @@
     "description": "Put the screens away for at least an hour each evening. Read, cook, talk or simply rest. Complete ten screen-free evenings.",
     "objective": "Spend 60 or more screen-free minutes on 10 different evenings.",
     "category": "daily-wellness",
-    "image": "static/assets/images/challenges/screen-free.svg",
+    "image": "static/assets/images/challenges/screen-free.webp",
     "startDate": "2026-11-02",
     "endDate": "2026-11-25",
     "activityTypes": [
@@ -216,7 +216,7 @@
     "description": "Cook or choose 30 colourful, balanced meals with plenty of vegetables, whole grains and fruit. No calorie counting, just better choices.",
     "objective": "Log 30 balanced meals during the challenge.",
     "category": "healthy-habits",
-    "image": "static/assets/images/challenges/healthy-plate.svg",
+    "image": "static/assets/images/challenges/healthy-plate.webp",
     "startDate": "2026-11-04",
     "endDate": "2026-11-28",
     "activityTypes": [
@@ -250,7 +250,7 @@
     "description": "Join the Brightside run club for a month of easy runs. Run, jog or run-walk your way to 40 kilometres at your own pace.",
     "objective": "Run a total of 40 kilometres in 30 days.",
     "category": "movement",
-    "image": "static/assets/images/challenges/running.svg",
+    "image": "static/assets/images/challenges/running.webp",
     "startDate": "2026-11-17",
     "endDate": "2026-12-16",
     "activityTypes": [
@@ -284,7 +284,7 @@
     "description": "Spend five minutes each day writing down what went well. A simple practice for a more positive outlook.",
     "objective": "Journal for at least 5 minutes on 14 different days.",
     "category": "mindfulness",
-    "image": "static/assets/images/challenges/journal.svg",
+    "image": "static/assets/images/challenges/journal.webp",
     "startDate": "2026-10-12",
     "endDate": "2026-11-02",
     "activityTypes": [
@@ -316,7 +316,7 @@
     "description": "Our September cycling challenge celebrated commuting and weekend rides. Thank you to everyone who rode with us.",
     "objective": "Cycle a total of 120 kilometres in September.",
     "category": "movement",
-    "image": "static/assets/images/challenges/cycling.svg",
+    "image": "static/assets/images/challenges/cycling.webp",
     "startDate": "2026-09-01",
     "endDate": "2026-09-30",
     "activityTypes": [
@@ -348,7 +348,7 @@
     "description": "Swap one meeting room booking a week for a walking conversation. Currently paused while we review the format with team leads.",
     "objective": "Complete 120 minutes of walking meetings.",
     "category": "daily-wellness",
-    "image": "static/assets/images/challenges/sunrise.svg",
+    "image": "static/assets/images/challenges/sunrise.webp",
     "startDate": "2026-11-01",
     "endDate": "2026-11-30",
     "activityTypes": [
@@ -380,7 +380,7 @@
     "description": "A three-week blend of hydration, movement and rest to welcome winter. Draft: details are still being finalised.",
     "objective": "Accumulate 400 active minutes across any wellness activity.",
     "category": "daily-wellness",
-    "image": "static/assets/images/challenges/winter.svg",
+    "image": "static/assets/images/challenges/winter.webp",
     "startDate": "2026-12-01",
     "endDate": "2026-12-21",
     "activityTypes": [

@@ -9,7 +9,7 @@ import {
   getUserReminders, UNIT_LABELS,
 } from '../engine.js';
 import { progressRing, progressBar, barChart } from '../components/charts.js';
-import { activityItem, statTile, trend, emptyState, categoryPill, challengeUrl } from '../components/templates.js';
+import { activityItem, statTile, trend, emptyState, categoryPill, challengeUrl, coverImage } from '../components/templates.js';
 import { reminderRow, sortReminders, handleReminderAction } from '../components/reminders.js';
 import {
   $, escapeHTML, icon, formatNumber, formatValue, formatLongDate, formatWeekday, formatShortDate, getGreeting, firstName,
@@ -146,7 +146,7 @@ function renderChallenges(items) {
       const status = getChallengeStatus(challenge);
       return `
         <article class="challenge-row">
-          <img class="challenge-row__thumb" src="${escapeHTML(challenge.image)}" alt="" width="96" height="72" loading="lazy">
+          ${coverImage(challenge.image, { className: 'challenge-row__thumb', sizes: '96px', width: 96, height: 72 })}
           <div class="challenge-row__body">
             <div class="cluster challenge-row__meta">
               ${categoryPill(challenge.category)}
@@ -244,7 +244,7 @@ function renderBadges(state, userId) {
         </div>
       </div>` : '<p class="small muted">You have unlocked every badge. Incredible!</p>'}
     ${unlocked.length
-      ? `<ul class="mini-badges" role="list">${unlocked.slice(0, 8).map((p) => `<li><img src="${escapeHTML(p.badge.icon)}" alt="${escapeHTML(p.badge.name)}" title="${escapeHTML(p.badge.name)}" width="44" height="44" loading="lazy"></li>`).join('')}</ul>`
+      ? `<ul class="mini-badges" role="list">${unlocked.slice(0, 8).map((p) => `<li><img src="${escapeHTML(p.badge.icon)}" alt="${escapeHTML(p.badge.name)}" title="${escapeHTML(p.badge.name)}" width="44" height="44" loading="lazy" decoding="async"></li>`).join('')}</ul>`
       : '<p class="small muted">Log your first activity to unlock “First Step”.</p>'}`;
 }
 

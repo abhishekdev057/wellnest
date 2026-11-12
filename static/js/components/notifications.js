@@ -47,7 +47,7 @@ function getNotificationItems() {
       const badge = state.badges.find((b) => b.id === badgeId);
       return badge
         ? `<li class="notice">
-             <img src="${escapeHTML(badge.icon)}" alt="" width="34" height="34">
+             <img src="${escapeHTML(badge.icon)}" alt="" width="34" height="34" loading="lazy" decoding="async">
              <div><p class="notice__title">Badge unlocked: ${escapeHTML(badge.name)}</p><p class="notice__meta">${formatRelativeDay(date)}</p></div>
            </li>`
         : '';

@@ -85,7 +85,7 @@ export function renderHeader(pageId) {
   header.innerHTML = `
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Wellnest home">
-        <img src="static/assets/images/logo.svg" alt="" width="34" height="34">
+        <img src="static/assets/images/logo-mark.webp" alt="" width="34" height="34">
         <span>Wellnest</span>
       </a>
       <nav class="primary-nav" aria-label="Main">
@@ -110,7 +110,7 @@ export function renderHeader(pageId) {
     <div class="mobile-drawer__backdrop" data-close-drawer></div>
     <div class="mobile-drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
       <div class="split">
-        <a class="brand" href="index.html"><img src="static/assets/images/logo.svg" alt="" width="30" height="30"><span>Wellnest</span></a>
+        <a class="brand" href="index.html"><img src="static/assets/images/logo-mark.webp" alt="" width="30" height="30"><span>Wellnest</span></a>
         <button type="button" class="icon-btn" data-close-drawer aria-label="Close menu">${icon('x')}</button>
       </div>
       <nav aria-label="Mobile">
@@ -182,7 +182,7 @@ export function renderFooter() {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="index.html"><img src="static/assets/images/logo.svg" alt="" width="32" height="32"><span>Wellnest</span></a>
+          <a class="brand" href="index.html"><img src="static/assets/images/logo-mark.webp" alt="" width="32" height="32"><span>Wellnest</span></a>
           <p>Wellness challenges that make healthy habits social, simple and genuinely fun — for teams, campuses and communities.</p>
         </div>
         <div class="footer-col">

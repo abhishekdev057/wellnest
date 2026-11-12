@@ -9,7 +9,7 @@ import {
   CATEGORIES, ACTIVITY_TYPES, getChallengeStatus, getParticipantCount, isEnrolled, getChallengeEnrollments,
   getTimeRemaining, describeTarget,
 } from '../engine.js';
-import { challengeCard, emptyState, categoryPill, challengeAction, challengeUrl } from '../components/templates.js';
+import { challengeCard, emptyState, categoryPill, challengeAction, challengeUrl, coverImage } from '../components/templates.js';
 import { showToast } from '../components/toast.js';
 import { sessionGet, sessionSet } from '../storage.js';
 import { $, $$, escapeHTML, icon, formatNumber, debounce, getQueryParam, announce, sumBy } from '../utils.js';
@@ -91,7 +91,7 @@ function renderSpotlight(state) {
   container.innerHTML = `
     <article class="spotlight">
       <div class="spotlight__media">
-        <img src="${escapeHTML(challenge.image)}" alt="" width="800" height="480">
+        ${coverImage(challenge.image, { sizes: '(max-width: 900px) 92vw, 660px', eager: true })}
         <span class="spotlight__flag">${icon('star')} Featured challenge</span>
       </div>
       <div class="spotlight__body">

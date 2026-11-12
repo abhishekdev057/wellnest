@@ -3,7 +3,7 @@
     "id": "first-step",
     "name": "First Step",
     "description": "Record your very first wellness activity.",
-    "icon": "static/assets/images/badges/first-step.svg",
+    "icon": "static/assets/images/badges/first-step.webp",
     "tier": "bronze",
     "rule": {
       "type": "activityCount",
@@ -15,7 +15,7 @@
     "id": "getting-started",
     "name": "Getting Started",
     "description": "Complete three wellness activities.",
-    "icon": "static/assets/images/badges/getting-started.svg",
+    "icon": "static/assets/images/badges/getting-started.webp",
     "tier": "bronze",
     "rule": {
       "type": "activityCount",
@@ -27,7 +27,7 @@
     "id": "consistency-champion",
     "name": "Consistency Champion",
     "description": "Stay active for three consecutive days.",
-    "icon": "static/assets/images/badges/consistency-champion.svg",
+    "icon": "static/assets/images/badges/consistency-champion.webp",
     "tier": "silver",
     "rule": {
       "type": "longestStreak",
@@ -39,7 +39,7 @@
     "id": "week-warrior",
     "name": "Week Warrior",
     "description": "Keep a seven-day activity streak.",
-    "icon": "static/assets/images/badges/week-warrior.svg",
+    "icon": "static/assets/images/badges/week-warrior.webp",
     "tier": "gold",
     "rule": {
       "type": "longestStreak",
@@ -51,7 +51,7 @@
     "id": "challenge-finisher",
     "name": "Challenge Finisher",
     "description": "Complete your first challenge.",
-    "icon": "static/assets/images/badges/challenge-finisher.svg",
+    "icon": "static/assets/images/badges/challenge-finisher.webp",
     "tier": "silver",
     "rule": {
       "type": "challengesCompleted",
@@ -63,7 +63,7 @@
     "id": "wellness-explorer",
     "name": "Wellness Explorer",
     "description": "Participate in three different challenges.",
-    "icon": "static/assets/images/badges/wellness-explorer.svg",
+    "icon": "static/assets/images/badges/wellness-explorer.webp",
     "tier": "silver",
     "rule": {
       "type": "challengesJoined",
@@ -75,7 +75,7 @@
     "id": "hydration-hero",
     "name": "Hydration Hero",
     "description": "Log hydration on fifteen occasions.",
-    "icon": "static/assets/images/badges/hydration-hero.svg",
+    "icon": "static/assets/images/badges/hydration-hero.webp",
     "tier": "silver",
     "rule": {
       "type": "typeCount",
@@ -88,7 +88,7 @@
     "id": "mindful-mind",
     "name": "Mindful Mind",
     "description": "Spend 300 minutes in meditation.",
-    "icon": "static/assets/images/badges/mindful-mind.svg",
+    "icon": "static/assets/images/badges/mindful-mind.webp",
     "tier": "gold",
     "rule": {
       "type": "typeTotal",
@@ -102,7 +102,7 @@
     "id": "dedicated-member",
     "name": "Dedicated Member",
     "description": "Earn 3,000 total wellness points.",
-    "icon": "static/assets/images/badges/dedicated-member.svg",
+    "icon": "static/assets/images/badges/dedicated-member.webp",
     "tier": "gold",
     "rule": {
       "type": "totalPoints",
@@ -114,7 +114,7 @@
     "id": "century-club",
     "name": "Century Club",
     "description": "Record one hundred activities.",
-    "icon": "static/assets/images/badges/century-club.svg",
+    "icon": "static/assets/images/badges/century-club.webp",
     "tier": "platinum",
     "rule": {
       "type": "activityCount",

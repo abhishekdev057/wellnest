@@ -199,7 +199,7 @@ export function openReminderManager() {
     container.innerHTML = reminders.length
       ? `<ul class="list reminder-list" role="list">${reminders.map((r) => reminderRow(r, { manage: true })).join('')}</ul>`
       : `<div class="empty-state empty-state--compact">
-           <img src="static/assets/images/backgrounds/empty-state.svg" alt="">
+           <img src="static/assets/images/backgrounds/empty-state.webp" alt="" width="480" height="389" loading="lazy" decoding="async">
            <h3>No reminders yet</h3>
            <p>Add a gentle nudge for water, stretching or a mindful minute.</p>
          </div>`;

@@ -6,7 +6,9 @@
   <title>Wellnest — Wellness challenges that build lasting habits</title>
   <meta name="description" content="Wellnest is a wellness challenge platform where organizations create non-clinical challenges and participants log activities, earn points, unlock achievements and climb leaderboards.">
   <meta name="theme-color" content="#1A1D26">
-  <link rel="icon" href="static/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="static/assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="static/assets/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="static/css/main.css">
   <link rel="stylesheet" href="static/css/components.css">
   <link rel="stylesheet" href="static/css/pages.css">
@@ -38,24 +40,29 @@
           </div>
         </div>
 
-        <div class="hero__visual" aria-hidden="true">
-          <img class="hero__art" src="static/assets/images/backgrounds/hero-landscape.svg" alt="" width="640" height="600">
-          <div class="float-card float-card--ring">
+        <div class="hero__visual">
+          <img class="hero__art"
+            src="static/assets/images/backgrounds/hero-meditation-1120.webp"
+            srcset="static/assets/images/backgrounds/hero-meditation-640.webp 640w, static/assets/images/backgrounds/hero-meditation-1120.webp 1120w"
+            sizes="(max-width: 960px) min(560px, 92vw), 560px"
+            alt="A person meditating cross-legged on a grassy hilltop at sunrise, overlooking misty mountains and a glowing river"
+            width="1120" height="1094" fetchpriority="high" decoding="async">
+          <div class="float-card float-card--ring" aria-hidden="true">
             <div data-hero-ring></div>
             <div>
               <p class="float-card__label">Current challenge</p>
               <p class="float-card__title" data-hero-challenge>Movement Week</p>
             </div>
           </div>
-          <div class="float-card float-card--streak">
+          <div class="float-card float-card--streak" aria-hidden="true">
             <span class="float-card__icon"><svg class="icon"><use href="static/assets/icons/sprite.svg#flame"></use></svg></span>
             <div>
               <p class="float-card__title"><span data-hero-streak>0</span>-day streak</p>
               <p class="float-card__label">Keep it going!</p>
             </div>
           </div>
-          <div class="float-card float-card--badge">
-            <img src="static/assets/images/badges/consistency-champion.svg" alt="" width="44" height="44" data-hero-badge-img>
+          <div class="float-card float-card--badge" aria-hidden="true">
+            <img src="static/assets/images/badges/consistency-champion.webp" alt="" width="44" height="44" data-hero-badge-img>
             <div>
               <p class="float-card__label">Badge unlocked</p>
               <p class="float-card__title" data-hero-badge>Consistency Champion</p>

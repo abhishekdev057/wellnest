@@ -90,7 +90,7 @@ function renderCategories(state) {
 function renderCommunity(state) {
   $('[data-badge-showcase]').innerHTML = state.badges
     .slice(0, 6)
-    .map((b) => `<figure class="badge-showcase__item"><img src="${escapeHTML(b.icon)}" alt="" width="56" height="56" loading="lazy"><figcaption>${escapeHTML(b.name)}</figcaption></figure>`)
+    .map((b) => `<figure class="badge-showcase__item"><img src="${escapeHTML(b.icon)}" alt="" width="56" height="56" loading="lazy" decoding="async"><figcaption>${escapeHTML(b.name)}</figcaption></figure>`)
     .join('');
 
   const rows = buildLeaderboard(state, { scope: 'weekly' }).slice(0, 5);

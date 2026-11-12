@@ -250,12 +250,23 @@
     flex: 1 1 auto;
   }
 
-  .float-card--ring {
-    left: 0;
+  .float-card--badge {
+    top: 4%;
+    right: 0;
   }
 
-  .float-card--badge {
+  /* Keep the meditator visible: one card below the artwork, no streak card */
+  .float-card--ring {
     right: 0;
+    bottom: -6%;
+  }
+
+  .float-card--streak {
+    display: none;
+  }
+
+  .hero__visual {
+    margin-bottom: var(--space-6);
   }
 
   .float-card {

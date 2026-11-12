@@ -350,7 +350,7 @@ export function validateChallengeInput(state, input, existingId = null) {
   if (description.length < 20 || description.length > 400) errors.description = 'Write 20–400 characters.';
   else if (!PATTERNS.safeText.test(description)) errors.description = 'Please avoid the characters < > { } and \\.';
   if (!CATEGORIES[input.category]) errors.category = 'Choose a category.';
-  if (!/^static\/assets\/images\/challenges\/[a-z-]+\.svg$/.test(input.image || '')) errors.image = 'Choose a cover image.';
+  if (!/^static\/assets\/images\/challenges\/[a-z-]+\.webp$/.test(input.image || '')) errors.image = 'Choose a cover image.';
 
   const start = parseDate(input.startDate);
   const end = parseDate(input.endDate);

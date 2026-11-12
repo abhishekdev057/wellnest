@@ -1160,6 +1160,16 @@ th[aria-sort="ascending"] .sort-btn .icon {
   background: var(--color-surface-3);
 }
 
+/* Challenge covers are warm sunrise paintings. While one is still downloading,
+   its slot shows a matching soft gradient instead of an empty grey box. */
+.challenge-card__media img,
+.spotlight__media img,
+.detail-hero__cover,
+.challenge-row__thumb,
+.option-card--image img {
+  background: linear-gradient(160deg, #f4e8d0 0%, #e9d5b0 55%, #cdb88f 100%);
+}
+
 .challenge-card__media img {
   width: 100%;
   height: 100%;
@@ -1731,6 +1741,26 @@ th[aria-sort="ascending"] .sort-btn .icon {
 
 .empty-state--compact img {
   width: 90px;
+}
+
+/* The spot illustrations are painted to fade into ivory, so in dark mode they
+   sit on a small ivory card instead of floating on the dark surface. */
+:root[data-theme="dark"] .empty-state img,
+:root[data-theme="dark"] .not-found img {
+  padding: 6px;
+  border-radius: var(--radius-md);
+  background: #f9f1de;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) .empty-state img,
+  :root:not([data-theme="light"]):not([data-theme="dark"]) .not-found img {
+    padding: 6px;
+    border-radius: var(--radius-md);
+    background: #f9f1de;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
 }
 
 .app-error {

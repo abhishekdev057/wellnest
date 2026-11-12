@@ -11,7 +11,7 @@ import {
   getActivityIcon,
 } from '../engine.js';
 import { progressRing, progressBar } from '../components/charts.js';
-import { activityItem, categoryPill, statusBadge, emptyState, personBlock, movementBadge } from '../components/templates.js';
+import { activityItem, categoryPill, statusBadge, emptyState, personBlock, movementBadge, coverImage } from '../components/templates.js';
 import { confirmDialog } from '../components/modal.js';
 import { showToast } from '../components/toast.js';
 import { $, escapeHTML, icon, formatNumber, formatValue, formatDate, getQueryParam, percent, pluralize } from '../utils.js';
@@ -24,7 +24,7 @@ function renderNotFound(id) {
   document.title = 'Challenge not found · Wellnest';
   root().innerHTML = `
     <section class="not-found" aria-labelledby="nf-title">
-      <img src="static/assets/images/backgrounds/not-found.svg" alt="" width="320" height="220">
+      <img src="static/assets/images/backgrounds/not-found.webp" alt="" width="640" height="462">
       <p class="eyebrow">404 · Challenge not found</p>
       <h1 id="nf-title">This trail doesn't lead anywhere</h1>
       <p class="lead">${id ? `We couldn't find a challenge with the ID “${escapeHTML(id)}”. It may have been removed or the link is incorrect.` : 'No challenge was specified in the link.'}</p>
@@ -74,7 +74,7 @@ function renderHero(state, challenge, enrollment) {
     ${status === 'paused' ? `<p class="banner banner--warning">${icon('pause')} This challenge is paused by the organizer. New entries do not count until it resumes.</p>` : ''}
     ${status === 'archived' ? `<p class="banner">${icon('archive')} This challenge is archived. It is kept for reference and is closed to new participants.</p>` : ''}
     <section class="detail-hero" aria-labelledby="challenge-title">
-      <img class="detail-hero__cover" src="${escapeHTML(challenge.image)}" alt="" width="800" height="480">
+      ${coverImage(challenge.image, { className: 'detail-hero__cover', sizes: '(max-width: 1280px) 100vw, 1240px', eager: true })}
       <div class="detail-hero__content">
         <div class="cluster">${categoryPill(challenge.category)} ${statusBadge(status)} <span class="pill">${escapeHTML(challenge.difficulty || 'Beginner')}</span></div>
         <h1 id="challenge-title">${escapeHTML(challenge.title)}</h1>

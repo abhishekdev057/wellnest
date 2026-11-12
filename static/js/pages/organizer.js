@@ -13,7 +13,7 @@ import {
   getChallengeProgress, getTimeRemaining, getCategoryDistribution, getBadgeProgress, describeTarget, daysAgoKey,
 } from '../engine.js';
 import { lineChart, barChart, donutChart, horizontalBars, progressBar } from '../components/charts.js';
-import { statTile, emptyState, categoryPill, statusBadge, activityItem, challengeUrl, trend } from '../components/templates.js';
+import { statTile, emptyState, categoryPill, statusBadge, activityItem, challengeUrl, trend, coverImage } from '../components/templates.js';
 import { openModal, confirmDialog } from '../components/modal.js';
 import { showToast } from '../components/toast.js';
 import { sessionGet, sessionSet } from '../storage.js';
@@ -145,7 +145,7 @@ function renderChallenges(state) {
               <tr>
                 <th scope="row">
                   <div class="org-challenge">
-                    <img src="${escapeHTML(c.image)}" alt="" width="64" height="40" loading="lazy">
+                    ${coverImage(c.image, { sizes: '64px', width: 64, height: 40 })}
                     <div>
                       <a class="table-link" href="${challengeUrl(c.id)}">${escapeHTML(c.title)}</a>
                       <div class="small muted">${categoryPill(c.category)} ${escapeHTML(describeTarget(c))}${c.featured ? ` · ${icon('star')} Featured` : ''}</div>
@@ -179,7 +179,7 @@ function openChallengeForm(existingId = null) {
   const existing = existingId ? getChallenge(state, existingId) : null;
   const today = toDateKey();
   const c = existing || {
-    title: '', tagline: '', description: '', objective: '', category: 'movement', image: 'static/assets/images/challenges/movement.svg',
+    title: '', tagline: '', description: '', objective: '', category: 'movement', image: 'static/assets/images/challenges/movement.webp',
     startDate: today, endDate: toDateKey(addDays(startOfToday(), 13)), activityTypes: ['walking'], metric: 'total', targetValue: '',
     targetUnit: 'minutes', dailyMinimum: '', dailyUnit: 'minutes', rewardPoints: 150, status: 'draft', featured: false, difficulty: 'Beginner', guidelines: [],
   };
@@ -192,11 +192,11 @@ function openChallengeForm(existingId = null) {
     </label>`).join('');
 
   const coverOptions = COVERS.map(([name, label]) => {
-    const src = `static/assets/images/challenges/${name}.svg`;
+    const src = `static/assets/images/challenges/${name}.webp`;
     return `
       <label class="option-card option-card--image">
         <input type="radio" name="image" value="${src}" ${src === c.image ? 'checked' : ''} aria-label="${label}" aria-describedby="${describedBy(FORM_ID, 'image')}">
-        <span class="option-card__body"><img src="${src}" alt="" width="160" height="96" loading="lazy">${label}</span>
+        <span class="option-card__body">${coverImage(src, { sizes: '160px', width: 160, height: 90 })}${label}</span>
       </label>`;
   }).join('');
 

@@ -246,7 +246,7 @@ export function openActivityForm({ challengeId = '', type = '' } = {}) {
         type: 'badge',
         title: `Challenge complete: ${result.completedChallenge.title}!`,
         message: `You earned a ${formatNumber(result.completedChallenge.rewardPoints)}-point completion bonus.`,
-        image: 'static/assets/images/badges/challenge-finisher.svg',
+        image: 'static/assets/images/badges/challenge-finisher.webp',
         duration: 8000,
       });
     }

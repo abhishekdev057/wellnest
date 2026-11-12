@@ -227,7 +227,7 @@ function openEditProfile() {
   const avatarOptions = AVATARS.map((src, i) => `
     <label class="option-card option-card--avatar">
       <input type="radio" name="avatar" value="${src}" ${src === user.avatar ? 'checked' : ''} aria-label="Avatar ${i + 1}" aria-describedby="${describedBy(FORM_ID, 'avatar')}">
-      <span class="option-card__body"><img src="${src}" alt="" width="56" height="56" loading="lazy"></span>
+      <span class="option-card__body"><img src="${src}" alt="" width="56" height="56" loading="lazy" decoding="async"></span>
     </label>`).join('');
 
   const modal = openModal({
