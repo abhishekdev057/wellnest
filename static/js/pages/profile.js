@@ -220,7 +220,7 @@ function render() {
 /* ---------------- Edit profile ---------------- */
 
 const FORM_ID = 'profile-form';
-const AVATARS = Array.from({ length: 16 }, (_, i) => `static/assets/images/avatars/avatar-${String(i + 1).padStart(2, '0')}.svg`);
+const AVATARS = Array.from({ length: 16 }, (_, i) => `static/assets/images/avatars/avatar-${String(i + 1).padStart(2, '0')}.webp`);
 
 function openEditProfile() {
   const user = getCurrentUser();

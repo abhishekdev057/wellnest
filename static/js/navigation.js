@@ -95,7 +95,7 @@ export function renderHeader(pageId) {
         ${primaryAction}
         ${isLanding || pageId === 'organizer' ? '' : '<div class="notifications" data-notifications></div>'}
         <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">${icon('moon')}</button>
-        ${isLanding ? '' : `<a class="header-avatar" href="${pageId === 'organizer' ? 'organizer.html' : 'profile.html'}" data-header-avatar aria-label="Your profile"><img src="static/assets/images/avatars/avatar-01.svg" alt="" width="34" height="34"></a>`}
+        ${isLanding ? '' : `<a class="header-avatar" href="${pageId === 'organizer' ? 'organizer.html' : 'profile.html'}" data-header-avatar aria-label="Your profile"><img src="static/assets/images/avatars/avatar-01.webp" alt="" width="34" height="34"></a>`}
         <button type="button" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">${icon('menu')}</button>
       </div>
     </div>`;

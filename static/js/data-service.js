@@ -176,12 +176,12 @@ export function buildInitialState(seed) {
 }
 
 /**
- * Challenge covers and badge icons moved from SVG illustrations to WebP artwork.
+ * Challenge covers, badge icons and avatars moved from SVG to WebP images.
  * States saved by an earlier version still hold the old .svg paths, so rewrite them.
  * @returns {boolean} true when anything changed.
  */
 function migrateAssetPaths(state) {
-  const OLD_ASSET = /^(static\/assets\/images\/(?:challenges|badges)\/[a-z-]+)\.svg$/;
+  const OLD_ASSET = /^(static\/assets\/images\/(?:challenges\/[a-z-]+|badges\/[a-z-]+|avatars\/avatar-\d{2}))\.svg$/;
   let changed = false;
   const fix = (record, field) => {
     const match = typeof record[field] === 'string' && record[field].match(OLD_ASSET);
@@ -192,6 +192,7 @@ function migrateAssetPaths(state) {
   };
   state.challenges.forEach((challenge) => fix(challenge, 'image'));
   state.badges.forEach((badge) => fix(badge, 'icon'));
+  state.users.forEach((user) => fix(user, 'avatar'));
   return changed;
 }
 

@@ -201,7 +201,7 @@ export function validateProfileInput(input) {
   if ((input.bio || '').length > 280) errors.bio = 'Keep your bio under 280 characters.';
   if (!PATTERNS.safeText.test(input.bio || '')) errors.bio = 'Please avoid the characters < > { } and \\.';
   if ((input.location || '').length > 40) errors.location = 'Keep the location under 40 characters.';
-  if (!/^static\/assets\/images\/avatars\/avatar-\d{2}\.svg$/.test(input.avatar || '')) errors.avatar = 'Choose one of the available avatars.';
+  if (!/^static\/assets\/images\/avatars\/avatar-\d{2}\.webp$/.test(input.avatar || '')) errors.avatar = 'Choose one of the available avatars.';
   const days = Number(input.activeDays);
   if (!Number.isInteger(days) || days < 1 || days > 7) errors.activeDays = 'Choose between 1 and 7 days.';
   const points = Number(input.weeklyPoints);

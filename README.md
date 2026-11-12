@@ -5,7 +5,7 @@ Organizations create non-clinical wellness challenges; participants join them, l
 build streaks, unlock badges and compete on leaderboards.
 
 It is built with **only HTML5, CSS3 and vanilla JavaScript (ES6 modules)**. It uses no frameworks, libraries, build tools or backend.
-Charts, icons and avatars are hand-built SVG; the hero, challenge covers, badges and page illustrations are painted artwork served as optimised WebP.
+Charts are generated with vanilla JavaScript as inline SVG. Avatars come from the open-source DiceBear *Notionists* collection, and the hero, challenge covers, badges and page illustrations are painted artwork. All images are served as optimised WebP (see [Credits](#10-credits)).
 
 ---
 
@@ -163,6 +163,12 @@ Every path in the project is relative (`data/…`, `static/…`), so the site wo
 - Tabs follow the WAI-ARIA pattern with arrow-key navigation. Sortable tables expose `aria-sort`.
 - Live regions announce toasts and filter results. Charts include text alternatives.
 - Visible `:focus-visible` outlines, sufficient colour contrast in both themes, and support for `prefers-reduced-motion`.
+
+---
+
+## 10. Credits
+- **Avatars:** [Notionists](https://www.dicebear.com/styles/notionists/) by Zoish, from the [DiceBear](https://www.dicebear.com) avatar library, licensed [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). They are downloaded once and served as local WebP files, so no external library or service is used at runtime.
+- **Private-profile avatar:** the `user-round` icon from [Lucide](https://lucide.dev), licensed ISC.
 
 ---
 
