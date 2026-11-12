@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard · Wellnest</title>
+  <meta name="description" content="Your Wellnest dashboard: points, streaks, weekly goals, current challenges, recent activities, achievements and reminders.">
+  <meta name="theme-color" content="#1A1D26">
+  <link rel="icon" href="static/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/pages.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <script src="static/js/theme-init.js"></script>
+  <script type="module" src="static/js/pages/dashboard.js"></script>
+</head>
+<body data-page="dashboard">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <div class="container dashboard">
+      <!-- Welcome -->
+      <section class="welcome" aria-labelledby="welcome-title" data-dash="welcome">
+        <div class="welcome__identity">
+          <div class="skeleton avatar avatar--xl"></div>
+          <div class="stack">
+            <div class="skeleton skeleton--text"></div>
+            <h1 id="welcome-title" class="skeleton skeleton--title"><span class="visually-hidden">Loading your dashboard</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section aria-labelledby="stats-title">
+        <h2 id="stats-title" class="visually-hidden">Your statistics</h2>
+        <div class="stat-grid" data-dash="stats">
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+        </div>
+      </section>
+
+      <div class="dash-grid">
+        <div class="dash-grid__main">
+          <!-- Weekly progress -->
+          <section class="panel" aria-labelledby="week-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="week-title">This week</h2>
+                <p>Rolling last 7 days</p>
+              </div>
+              <a class="link-btn" href="profile.html#goals">Edit goals</a>
+            </div>
+            <div data-dash="week"><div class="skeleton skeleton--card"></div></div>
+          </section>
+
+          <!-- Current challenges -->
+          <section class="panel" aria-labelledby="current-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="current-title">Current challenges</h2>
+                <p>Your progress toward each target</p>
+              </div>
+              <a class="link-btn" href="challenges.html">Find more
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#arrow-right"></use></svg>
+              </a>
+            </div>
+            <div class="challenge-rows" data-dash="challenges"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+
+          <!-- Recent activity -->
+          <section class="panel" aria-labelledby="activity-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="activity-title">Recent activity</h2>
+                <p>Your latest logged activities</p>
+              </div>
+              <a class="link-btn" href="profile.html#history">Full history
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#arrow-right"></use></svg>
+              </a>
+            </div>
+            <div data-dash="activity"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+        </div>
+
+        <aside class="dash-grid__aside" aria-label="Streaks, achievements and reminders">
+          <section class="panel" aria-labelledby="calendar-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="calendar-title">Activity streak</h2>
+                <p data-dash="streak-caption">Last 5 weeks</p>
+              </div>
+            </div>
+            <div data-dash="calendar"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+
+          <section class="panel" aria-labelledby="badges-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="badges-title">Achievements</h2>
+                <p data-dash="badge-caption">Badges you have earned</p>
+              </div>
+              <a class="link-btn" href="profile.html#achievements">All</a>
+            </div>
+            <div data-dash="badges"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+
+          <section class="panel" id="reminders" aria-labelledby="reminders-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="reminders-title">Upcoming reminders</h2>
+                <p>Gentle nudges for today</p>
+              </div>
+              <button type="button" class="link-btn" data-action="manage-reminders">Manage</button>
+            </div>
+            <div data-dash="reminders"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+
+          <section class="panel panel--flat" aria-labelledby="quick-title">
+            <h2 id="quick-title" class="panel-title-sm">Quick actions</h2>
+            <div class="quick-actions">
+              <button type="button" class="quick-action" data-action="log-activity">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#plus"></use></svg><span>Log activity</span>
+              </button>
+              <a class="quick-action" href="challenges.html">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#flag"></use></svg><span>Browse challenges</span>
+              </a>
+              <a class="quick-action" href="leaderboard.html">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#trophy"></use></svg><span>View leaderboard</span>
+              </a>
+              <button type="button" class="quick-action" data-action="manage-reminders">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#bell"></use></svg><span>Manage reminders</span>
+              </button>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <div id="sr-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

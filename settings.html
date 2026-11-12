@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings · Wellnest</title>
+  <meta name="description" content="Wellnest settings: privacy and visibility, reminder preferences, theme, demo account, data export and reset.">
+  <meta name="theme-color" content="#1A1D26">
+  <link rel="icon" href="static/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/pages.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <script src="static/js/theme-init.js"></script>
+  <script type="module" src="static/js/pages/settings.js"></script>
+</head>
+<body data-page="settings">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <div class="container">
+      <section class="page-intro page-intro--compact" aria-labelledby="page-title">
+        <div class="page-intro__text">
+          <p class="eyebrow">Preferences</p>
+          <h1 id="page-title">Settings</h1>
+          <p class="lead">Control what others can see, how reminders behave and how Wellnest looks. Every change is saved instantly in this browser.</p>
+        </div>
+      </section>
+
+      <div class="settings-layout">
+        <nav class="settings-nav" aria-label="Settings sections">
+          <ul role="list">
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#reminder-preferences">Reminders</a></li>
+            <li><a href="#appearance">Appearance</a></li>
+            <li><a href="#demo-account">Demo account</a></li>
+            <li><a href="#data">Data &amp; storage</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="settings-content">
+          <!-- Privacy -->
+          <section class="panel settings-section" id="privacy" aria-labelledby="privacy-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="privacy-title">Privacy &amp; visibility</h2>
+                <p>Decide what other members can see about you.</p>
+              </div>
+              <svg class="icon icon--lg muted" aria-hidden="true"><use href="static/assets/icons/sprite.svg#shield"></use></svg>
+            </div>
+            <form data-privacy-form>
+              <fieldset>
+                <legend class="visually-hidden">Visibility options</legend>
+                <div class="setting-row">
+                  <div class="setting-row__text">
+                    <label for="privacy-profile">Profile visibility</label>
+                    <p id="privacy-profile-desc">When off, other members see “Private member” instead of your name and avatar on challenge pages.</p>
+                  </div>
+                  <span class="switch"><input type="checkbox" id="privacy-profile" name="profileVisible" aria-describedby="privacy-profile-desc"><span class="switch__track"></span></span>
+                </div>
+                <div class="setting-row">
+                  <div class="setting-row__text">
+                    <label for="privacy-leaderboard">Leaderboard visibility</label>
+                    <p id="privacy-leaderboard-desc">When off, you are removed from every public leaderboard. You can still see your private rank.</p>
+                  </div>
+                  <span class="switch"><input type="checkbox" id="privacy-leaderboard" name="leaderboardVisible" aria-describedby="privacy-leaderboard-desc"><span class="switch__track"></span></span>
+                </div>
+                <div class="setting-row">
+                  <div class="setting-row__text">
+                    <label for="privacy-activity">Activity visibility</label>
+                    <p id="privacy-activity-desc">When off, your logged activities do not appear in community activity feeds on challenge pages.</p>
+                  </div>
+                  <span class="switch"><input type="checkbox" id="privacy-activity" name="activityVisible" aria-describedby="privacy-activity-desc"><span class="switch__track"></span></span>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Reminders -->
+          <section class="panel settings-section" id="reminder-preferences" aria-labelledby="reminder-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="reminder-title">Reminder preferences</h2>
+                <p>Reminders are shown inside Wellnest only — no emails or push notifications.</p>
+              </div>
+              <button type="button" class="btn btn--sm" data-action="manage-reminders">Manage reminders</button>
+            </div>
+            <form data-reminder-form novalidate>
+              <fieldset>
+                <legend class="visually-hidden">Reminder options</legend>
+                <div class="setting-row">
+                  <div class="setting-row__text">
+                    <label for="pref-dashboard">Show reminders on the dashboard</label>
+                    <p>Display your upcoming reminders in the dashboard sidebar.</p>
+                  </div>
+                  <span class="switch"><input type="checkbox" id="pref-dashboard" name="showOnDashboard"><span class="switch__track"></span></span>
+                </div>
+                <div class="setting-row">
+                  <div class="setting-row__text">
+                    <label for="pref-alerts">In-app alerts</label>
+                    <p>Show a notification when a reminder becomes due while Wellnest is open.</p>
+                  </div>
+                  <span class="switch"><input type="checkbox" id="pref-alerts" name="inAppAlerts"><span class="switch__track"></span></span>
+                </div>
+                <div class="setting-row">
+                  <div class="setting-row__text">
+                    <label for="pref-time">Default reminder time</label>
+                    <p id="pref-time-desc">Pre-filled when you create a new reminder.</p>
+                  </div>
+                  <div class="setting-row__control">
+                    <input class="input input--narrow" type="time" id="pref-time" name="defaultTime" required aria-describedby="pref-time-desc pref-time-error">
+                    <p class="field-error" id="pref-time-error" data-error-for="defaultTime"></p>
+                  </div>
+                </div>
+                <p class="small muted" data-reminder-summary></p>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Appearance -->
+          <section class="panel settings-section" id="appearance" aria-labelledby="appearance-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="appearance-title">Appearance</h2>
+                <p>Choose a theme or follow your device setting.</p>
+              </div>
+            </div>
+            <form data-theme-form>
+              <fieldset>
+                <legend class="visually-hidden">Theme</legend>
+                <div class="theme-options">
+                  <label class="theme-option">
+                    <input type="radio" name="theme" value="light">
+                    <span class="theme-option__body"><span class="theme-preview theme-preview--light" aria-hidden="true"></span>Light</span>
+                  </label>
+                  <label class="theme-option">
+                    <input type="radio" name="theme" value="dark">
+                    <span class="theme-option__body"><span class="theme-preview theme-preview--dark" aria-hidden="true"></span>Dark</span>
+                  </label>
+                  <label class="theme-option">
+                    <input type="radio" name="theme" value="system">
+                    <span class="theme-option__body"><span class="theme-preview theme-preview--system" aria-hidden="true"></span>System</span>
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- Demo account -->
+          <section class="panel settings-section" id="demo-account" aria-labelledby="demo-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="demo-title">Demo account</h2>
+                <p>Try Wellnest as a different participant — useful for testing privacy and leaderboards.</p>
+              </div>
+            </div>
+            <form class="demo-form" data-demo-form>
+              <div class="field">
+                <label for="demo-user">Signed in as</label>
+                <select class="select" id="demo-user" name="userId"></select>
+              </div>
+              <button type="submit" class="btn btn--primary">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#swap"></use></svg> Switch participant
+              </button>
+            </form>
+            <p class="small muted">This is a simulated sign-in for demonstration. Wellnest has no real authentication.</p>
+          </section>
+
+          <!-- Data -->
+          <section class="panel settings-section" id="data" aria-labelledby="data-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="data-title">Data &amp; storage</h2>
+                <p>Your changes are stored in this browser using LocalStorage.</p>
+              </div>
+            </div>
+            <dl class="kv" data-storage-info></dl>
+            <div class="data-actions">
+              <div class="data-action">
+                <div>
+                  <h3>Export your data</h3>
+                  <p class="small muted">Download the full application state as a JSON file.</p>
+                </div>
+                <button type="button" class="btn" data-export>
+                  <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#download"></use></svg> Export JSON
+                </button>
+              </div>
+              <div class="data-action data-action--danger">
+                <div>
+                  <h3>Reset demonstration data</h3>
+                  <p class="small muted">Discard every change and restore the original seed data from the JSON files.</p>
+                </div>
+                <button type="button" class="btn btn--danger-outline" data-reset>
+                  <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#refresh"></use></svg> Reset data
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- About -->
+          <section class="panel settings-section" id="about" aria-labelledby="about-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="about-title">About Wellnest</h2>
+                <p>Application information</p>
+              </div>
+              <img src="static/assets/images/logo.svg" alt="" width="44" height="44">
+            </div>
+            <dl class="kv">
+              <div><dt>Version</dt><dd>1.0.0</dd></div>
+              <div><dt>Course</dt><dd>CSE326 · Internet Programming</dd></div>
+              <div><dt>Technology</dt><dd>HTML5 · CSS3 · Vanilla JavaScript (ES6 modules)</dd></div>
+              <div><dt>Data</dt><dd>JSON seed files + LocalStorage</dd></div>
+              <div><dt>Charts &amp; icons</dt><dd>Hand-built SVG</dd></div>
+            </dl>
+            <p class="small muted about-note">Wellnest is a non-clinical wellness challenge platform. It does not collect medical information and does not provide medical advice. The organizer role is simulated for demonstration and is not a secure authentication system.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <div id="sr-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

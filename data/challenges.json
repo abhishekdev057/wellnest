@@ -1,0 +1,411 @@
+[
+  {
+    "id": "movement-week",
+    "title": "Movement Week",
+    "tagline": "Two weeks of joyful, everyday movement.",
+    "description": "Walk, run, cycle or train your way to 300 active minutes. Every form of movement counts, so pick what you love and keep showing up.",
+    "objective": "Accumulate 300 minutes of movement across any combination of walking, running, cycling or exercise sessions.",
+    "category": "movement",
+    "image": "static/assets/images/challenges/movement.svg",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-18",
+    "activityTypes": [
+      "walking",
+      "running",
+      "cycling",
+      "exercise"
+    ],
+    "metric": "total",
+    "targetValue": 300,
+    "targetUnit": "minutes",
+    "rewardPoints": 200,
+    "status": "active",
+    "featured": true,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Log sessions of at least 5 minutes in minutes.",
+      "Mix activity types to keep things fresh.",
+      "Warm up gently and move at a pace that feels comfortable.",
+      "Only log activities you completed yourself."
+    ],
+    "requirements": [
+      "Reach 300 total minutes before the end date.",
+      "Activities must be logged in minutes to count.",
+      "Only activities dated inside the challenge window count."
+    ],
+    "durationDays": 14,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-24"
+  },
+  {
+    "id": "step-up-sprint",
+    "title": "Step Up Sprint",
+    "tagline": "150,000 steps in three weeks.",
+    "description": "A friendly step challenge that turns commutes, calls and coffee runs into progress. Average roughly 7,000 steps a day to finish strong.",
+    "objective": "Walk a total of 150,000 steps during the three-week sprint.",
+    "category": "movement",
+    "image": "static/assets/images/challenges/steps.svg",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-21",
+    "activityTypes": [
+      "walking"
+    ],
+    "metric": "total",
+    "targetValue": 150000,
+    "targetUnit": "steps",
+    "rewardPoints": 300,
+    "status": "active",
+    "featured": true,
+    "difficulty": "Intermediate",
+    "guidelines": [
+      "Log walks in steps using your phone or watch count.",
+      "Combine short walks into a single daily entry if you prefer.",
+      "Walking meetings absolutely count."
+    ],
+    "requirements": [
+      "Reach 150,000 total steps.",
+      "A single entry can record up to 40,000 steps.",
+      "Steps must be logged within 13 days of the walk."
+    ],
+    "durationDays": 21,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "hydration-habit",
+    "title": "Hydration Habit",
+    "tagline": "Eight glasses, fourteen days.",
+    "description": "Build an easy, lasting hydration routine. Drink at least eight glasses of water on fourteen different days during the month.",
+    "objective": "Reach eight glasses of water on 14 separate days.",
+    "category": "hydration",
+    "image": "static/assets/images/challenges/hydration.svg",
+    "startDate": "2026-11-03",
+    "endDate": "2026-11-30",
+    "activityTypes": [
+      "hydration"
+    ],
+    "metric": "days",
+    "targetValue": 14,
+    "targetUnit": "days",
+    "dailyMinimum": 8,
+    "rewardPoints": 180,
+    "status": "active",
+    "featured": true,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Log water in glasses (about 250 ml each).",
+      "Several entries on the same day are added together.",
+      "Keep a bottle at your desk as a visual cue."
+    ],
+    "requirements": [
+      "Log 8 or more glasses on 14 different days.",
+      "Only hydration entries in glasses count toward the daily total."
+    ],
+    "durationDays": 28,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-22"
+  },
+  {
+    "id": "mindful-mornings",
+    "title": "Mindful Mornings",
+    "tagline": "Ten quiet minutes to start the day.",
+    "description": "Start each morning with a short meditation or breathing practice. Complete 21 mindful days within four weeks to build a habit that sticks.",
+    "objective": "Meditate for at least 10 minutes on 21 different days.",
+    "category": "mindfulness",
+    "image": "static/assets/images/challenges/mindfulness.svg",
+    "startDate": "2026-10-26",
+    "endDate": "2026-11-22",
+    "activityTypes": [
+      "meditation"
+    ],
+    "metric": "days",
+    "targetValue": 21,
+    "targetUnit": "days",
+    "dailyMinimum": 10,
+    "rewardPoints": 250,
+    "status": "active",
+    "featured": true,
+    "difficulty": "Intermediate",
+    "guidelines": [
+      "Any guided or unguided practice counts.",
+      "Find a consistent time and a quiet spot.",
+      "Missed a day? Simply begin again tomorrow."
+    ],
+    "requirements": [
+      "Log 10 or more meditation minutes on 21 different days.",
+      "Entries must be logged in minutes."
+    ],
+    "durationDays": 28,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-14"
+  },
+  {
+    "id": "desk-stretch-breaks",
+    "title": "Desk Stretch Breaks",
+    "tagline": "Small stretches, big difference.",
+    "description": "Interrupt long sitting sessions with gentle stretching or yoga. Collect 150 minutes of stretch breaks over two weeks.",
+    "objective": "Accumulate 150 minutes of stretching or yoga.",
+    "category": "healthy-habits",
+    "image": "static/assets/images/challenges/stretch.svg",
+    "startDate": "2026-11-08",
+    "endDate": "2026-11-21",
+    "activityTypes": [
+      "stretching",
+      "yoga"
+    ],
+    "metric": "total",
+    "targetValue": 150,
+    "targetUnit": "minutes",
+    "rewardPoints": 150,
+    "status": "active",
+    "featured": false,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Aim for short 5 to 10 minute breaks every couple of hours.",
+      "Move gently and never stretch into discomfort.",
+      "Invite a teammate to join your break."
+    ],
+    "requirements": [
+      "Reach 150 total minutes of stretching or yoga.",
+      "Entries must be logged in minutes."
+    ],
+    "durationDays": 14,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-27"
+  },
+  {
+    "id": "screen-free-evenings",
+    "title": "Screen-Free Evenings",
+    "tagline": "Reclaim an hour of your evening.",
+    "description": "Put the screens away for at least an hour each evening. Read, cook, talk or simply rest. Complete ten screen-free evenings.",
+    "objective": "Spend 60 or more screen-free minutes on 10 different evenings.",
+    "category": "daily-wellness",
+    "image": "static/assets/images/challenges/screen-free.svg",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-25",
+    "activityTypes": [
+      "screen-free"
+    ],
+    "metric": "days",
+    "targetValue": 10,
+    "targetUnit": "days",
+    "dailyMinimum": 60,
+    "rewardPoints": 160,
+    "status": "active",
+    "featured": false,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Choose a consistent wind-down window.",
+      "Charge your phone outside the room you relax in.",
+      "Log the total screen-free minutes for the evening."
+    ],
+    "requirements": [
+      "Log 60 or more screen-free minutes on 10 different days."
+    ],
+    "durationDays": 24,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-21"
+  },
+  {
+    "id": "healthy-plate",
+    "title": "Healthy Plate",
+    "tagline": "Thirty balanced meals, your way.",
+    "description": "Cook or choose 30 colourful, balanced meals with plenty of vegetables, whole grains and fruit. No calorie counting, just better choices.",
+    "objective": "Log 30 balanced meals during the challenge.",
+    "category": "healthy-habits",
+    "image": "static/assets/images/challenges/healthy-plate.svg",
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-28",
+    "activityTypes": [
+      "healthy-meal"
+    ],
+    "metric": "total",
+    "targetValue": 30,
+    "targetUnit": "meals",
+    "rewardPoints": 220,
+    "status": "active",
+    "featured": false,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "A balanced plate includes vegetables, a whole grain and a protein source.",
+      "Home-cooked and canteen meals both count.",
+      "This is about choices, not restriction."
+    ],
+    "requirements": [
+      "Log 30 meals in total.",
+      "A maximum of 6 meals can be logged per entry."
+    ],
+    "durationDays": 25,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-23"
+  },
+  {
+    "id": "5k-run-club",
+    "title": "5K Run Club",
+    "tagline": "Forty kilometres of community running.",
+    "description": "Join the Brightside run club for a month of easy runs. Run, jog or run-walk your way to 40 kilometres at your own pace.",
+    "objective": "Run a total of 40 kilometres in 30 days.",
+    "category": "movement",
+    "image": "static/assets/images/challenges/running.svg",
+    "startDate": "2026-11-17",
+    "endDate": "2026-12-16",
+    "activityTypes": [
+      "running"
+    ],
+    "metric": "total",
+    "targetValue": 40,
+    "targetUnit": "km",
+    "rewardPoints": 350,
+    "status": "active",
+    "featured": true,
+    "difficulty": "Advanced",
+    "guidelines": [
+      "Run-walk intervals are welcome.",
+      "Log distance in kilometres.",
+      "Rest days are part of training."
+    ],
+    "requirements": [
+      "Reach 40 total kilometres.",
+      "Runs must be logged in kilometres to count."
+    ],
+    "durationDays": 30,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "gratitude-journal",
+    "title": "Gratitude Journal",
+    "tagline": "Two weeks of noticing the good.",
+    "description": "Spend five minutes each day writing down what went well. A simple practice for a more positive outlook.",
+    "objective": "Journal for at least 5 minutes on 14 different days.",
+    "category": "mindfulness",
+    "image": "static/assets/images/challenges/journal.svg",
+    "startDate": "2026-10-12",
+    "endDate": "2026-11-02",
+    "activityTypes": [
+      "journaling"
+    ],
+    "metric": "days",
+    "targetValue": 14,
+    "targetUnit": "days",
+    "dailyMinimum": 5,
+    "rewardPoints": 140,
+    "status": "active",
+    "featured": false,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Write three things you are grateful for.",
+      "Paper or digital journals both count."
+    ],
+    "requirements": [
+      "Log 5 or more journaling minutes on 14 different days."
+    ],
+    "durationDays": 22,
+    "createdBy": "u-meera",
+    "createdAt": "2026-09-30"
+  },
+  {
+    "id": "autumn-ride",
+    "title": "Autumn Ride Challenge",
+    "tagline": "120 kilometres on two wheels.",
+    "description": "Our September cycling challenge celebrated commuting and weekend rides. Thank you to everyone who rode with us.",
+    "objective": "Cycle a total of 120 kilometres in September.",
+    "category": "movement",
+    "image": "static/assets/images/challenges/cycling.svg",
+    "startDate": "2026-09-01",
+    "endDate": "2026-09-30",
+    "activityTypes": [
+      "cycling"
+    ],
+    "metric": "total",
+    "targetValue": 120,
+    "targetUnit": "km",
+    "rewardPoints": 260,
+    "status": "archived",
+    "featured": false,
+    "difficulty": "Intermediate",
+    "guidelines": [
+      "Wear a helmet and follow local traffic rules.",
+      "Log distance in kilometres."
+    ],
+    "requirements": [
+      "Reach 120 total kilometres."
+    ],
+    "durationDays": 30,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-08-20"
+  },
+  {
+    "id": "walk-and-talk",
+    "title": "Walk and Talk Fridays",
+    "tagline": "Take your one-to-ones outdoors.",
+    "description": "Swap one meeting room booking a week for a walking conversation. Currently paused while we review the format with team leads.",
+    "objective": "Complete 120 minutes of walking meetings.",
+    "category": "daily-wellness",
+    "image": "static/assets/images/challenges/sunrise.svg",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-30",
+    "activityTypes": [
+      "walking"
+    ],
+    "metric": "total",
+    "targetValue": 120,
+    "targetUnit": "minutes",
+    "rewardPoints": 120,
+    "status": "paused",
+    "featured": false,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Choose a safe, quiet route.",
+      "Share an agenda before you leave."
+    ],
+    "requirements": [
+      "Reach 120 walking minutes."
+    ],
+    "durationDays": 30,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-10-20"
+  },
+  {
+    "id": "winter-wellness-kickoff",
+    "title": "Winter Wellness Kickoff",
+    "tagline": "A gentle reset for the colder months.",
+    "description": "A three-week blend of hydration, movement and rest to welcome winter. Draft: details are still being finalised.",
+    "objective": "Accumulate 400 active minutes across any wellness activity.",
+    "category": "daily-wellness",
+    "image": "static/assets/images/challenges/winter.svg",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-21",
+    "activityTypes": [
+      "walking",
+      "exercise",
+      "yoga",
+      "stretching"
+    ],
+    "metric": "total",
+    "targetValue": 400,
+    "targetUnit": "minutes",
+    "rewardPoints": 300,
+    "status": "draft",
+    "featured": false,
+    "difficulty": "Beginner",
+    "guidelines": [
+      "Dress warmly for outdoor sessions.",
+      "Indoor workouts are equally welcome."
+    ],
+    "requirements": [
+      "Reach 400 total minutes."
+    ],
+    "durationDays": 21,
+    "dailyMinimum": null,
+    "createdBy": "u-meera",
+    "createdAt": "2026-11-19"
+  }
+]

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your profile · Wellnest</title>
+  <meta name="description" content="Your Wellnest profile: biography, statistics, participation history, achievements and complete activity history.">
+  <meta name="theme-color" content="#1A1D26">
+  <link rel="icon" href="static/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/pages.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <script src="static/js/theme-init.js"></script>
+  <script type="module" src="static/js/pages/profile.js"></script>
+</head>
+<body data-page="profile">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <div class="container">
+      <section class="profile-hero" aria-labelledby="profile-name" data-profile="hero">
+        <div class="skeleton profile-hero__skeleton"></div>
+        <h1 id="profile-name" class="visually-hidden">Loading profile</h1>
+      </section>
+
+      <section aria-labelledby="profile-stats-title" class="profile-stats">
+        <h2 id="profile-stats-title" class="visually-hidden">Profile statistics</h2>
+        <div class="stat-grid" data-profile="stats">
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+        </div>
+      </section>
+
+      <div class="profile-grid">
+        <div class="profile-grid__main">
+          <section class="panel" aria-labelledby="personal-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="personal-title">Personal statistics</h2>
+                <p>Everything you have logged on Wellnest</p>
+              </div>
+            </div>
+            <div data-profile="personal"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+
+          <section class="panel" id="participation" aria-labelledby="participation-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="participation-title">Participation history</h2>
+                <p>Challenges you have joined, completed or left</p>
+              </div>
+            </div>
+            <div data-profile="participation"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+
+          <section class="panel" id="history" aria-labelledby="history-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="history-title">Activity history</h2>
+                <p data-history-count>All logged activities</p>
+              </div>
+              <button type="button" class="btn btn--sm btn--primary" data-action="log-activity">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#plus"></use></svg> Log activity
+              </button>
+            </div>
+            <form class="toolbar toolbar--compact" role="search" aria-label="Filter activity history" data-history-filters>
+              <div class="field field--inline">
+                <label for="history-type">Activity</label>
+                <select class="select" id="history-type" name="type"></select>
+              </div>
+              <div class="field field--inline">
+                <label for="history-range">Period</label>
+                <select class="select" id="history-range" name="range">
+                  <option value="all">All time</option>
+                  <option value="7">Last 7 days</option>
+                  <option value="30">Last 30 days</option>
+                </select>
+              </div>
+              <div class="search-input toolbar__search">
+                <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#search"></use></svg>
+                <label for="history-search" class="visually-hidden">Search notes</label>
+                <input class="input" type="search" id="history-search" name="q" placeholder="Search notes" maxlength="40">
+              </div>
+            </form>
+            <div data-profile="history"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+        </div>
+
+        <aside class="profile-grid__aside" aria-label="Achievements and goals">
+          <section class="panel" id="goals" aria-labelledby="goals-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="goals-title">Weekly goals</h2>
+                <p>Rolling last 7 days</p>
+              </div>
+              <button type="button" class="link-btn" data-edit-profile>Edit</button>
+            </div>
+            <div data-profile="goals"></div>
+          </section>
+
+          <section class="panel" id="achievements" aria-labelledby="achievements-title">
+            <div class="panel__header">
+              <div>
+                <h2 id="achievements-title">Achievements</h2>
+                <p data-badge-summary>Badges and milestones</p>
+              </div>
+            </div>
+            <div class="badge-grid badge-grid--compact" data-profile="badges"></div>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <div id="sr-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

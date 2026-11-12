@@ -1,0 +1,125 @@
+[
+  {
+    "id": "first-step",
+    "name": "First Step",
+    "description": "Record your very first wellness activity.",
+    "icon": "static/assets/images/badges/first-step.svg",
+    "tier": "bronze",
+    "rule": {
+      "type": "activityCount",
+      "threshold": 1
+    },
+    "hint": "Log any activity to unlock."
+  },
+  {
+    "id": "getting-started",
+    "name": "Getting Started",
+    "description": "Complete three wellness activities.",
+    "icon": "static/assets/images/badges/getting-started.svg",
+    "tier": "bronze",
+    "rule": {
+      "type": "activityCount",
+      "threshold": 3
+    },
+    "hint": "Log three activities."
+  },
+  {
+    "id": "consistency-champion",
+    "name": "Consistency Champion",
+    "description": "Stay active for three consecutive days.",
+    "icon": "static/assets/images/badges/consistency-champion.svg",
+    "tier": "silver",
+    "rule": {
+      "type": "longestStreak",
+      "threshold": 3
+    },
+    "hint": "Log at least one activity on three days in a row."
+  },
+  {
+    "id": "week-warrior",
+    "name": "Week Warrior",
+    "description": "Keep a seven-day activity streak.",
+    "icon": "static/assets/images/badges/week-warrior.svg",
+    "tier": "gold",
+    "rule": {
+      "type": "longestStreak",
+      "threshold": 7
+    },
+    "hint": "Log an activity every day for a week."
+  },
+  {
+    "id": "challenge-finisher",
+    "name": "Challenge Finisher",
+    "description": "Complete your first challenge.",
+    "icon": "static/assets/images/badges/challenge-finisher.svg",
+    "tier": "silver",
+    "rule": {
+      "type": "challengesCompleted",
+      "threshold": 1
+    },
+    "hint": "Reach the target of any challenge."
+  },
+  {
+    "id": "wellness-explorer",
+    "name": "Wellness Explorer",
+    "description": "Participate in three different challenges.",
+    "icon": "static/assets/images/badges/wellness-explorer.svg",
+    "tier": "silver",
+    "rule": {
+      "type": "challengesJoined",
+      "threshold": 3
+    },
+    "hint": "Join three challenges."
+  },
+  {
+    "id": "hydration-hero",
+    "name": "Hydration Hero",
+    "description": "Log hydration on fifteen occasions.",
+    "icon": "static/assets/images/badges/hydration-hero.svg",
+    "tier": "silver",
+    "rule": {
+      "type": "typeCount",
+      "activityType": "hydration",
+      "threshold": 15
+    },
+    "hint": "Keep logging your water intake."
+  },
+  {
+    "id": "mindful-mind",
+    "name": "Mindful Mind",
+    "description": "Spend 300 minutes in meditation.",
+    "icon": "static/assets/images/badges/mindful-mind.svg",
+    "tier": "gold",
+    "rule": {
+      "type": "typeTotal",
+      "activityType": "meditation",
+      "unit": "minutes",
+      "threshold": 300
+    },
+    "hint": "Meditation minutes add up over time."
+  },
+  {
+    "id": "dedicated-member",
+    "name": "Dedicated Member",
+    "description": "Earn 3,000 total wellness points.",
+    "icon": "static/assets/images/badges/dedicated-member.svg",
+    "tier": "gold",
+    "rule": {
+      "type": "totalPoints",
+      "threshold": 3000
+    },
+    "hint": "Points come from activities and completed challenges."
+  },
+  {
+    "id": "century-club",
+    "name": "Century Club",
+    "description": "Record one hundred activities.",
+    "icon": "static/assets/images/badges/century-club.svg",
+    "tier": "platinum",
+    "rule": {
+      "type": "activityCount",
+      "threshold": 100
+    },
+    "hint": "A long-term milestone for committed members."
+  }
+]

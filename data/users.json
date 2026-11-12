@@ -1,0 +1,289 @@
+[
+  {
+    "id": "u-ananya",
+    "name": "Ananya Sharma",
+    "email": "ananya.sharma@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-01.svg",
+    "headline": "Product designer · Sunrise walker",
+    "bio": "Designing calm interfaces by day and chasing sunrise walks by morning. Currently building a steady meditation habit, one breath at a time.",
+    "location": "Pune",
+    "team": "Design Studio",
+    "joinDate": "2026-08-30",
+    "weeklyGoals": {
+      "activeDays": 5,
+      "points": 600
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-rohan",
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-02.svg",
+    "headline": "Backend engineer · Weekend runner",
+    "bio": "Training for my first half marathon. I log every run and never skip stretching day.",
+    "location": "Bengaluru",
+    "team": "Platform Engineering",
+    "joinDate": "2026-07-15",
+    "weeklyGoals": {
+      "activeDays": 6,
+      "points": 700
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-priya",
+    "name": "Priya Nair",
+    "email": "priya.nair@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-03.svg",
+    "headline": "People partner · Yoga every evening",
+    "bio": "Believer in small daily rituals. Yoga, water and a good playlist keep me going.",
+    "location": "Kochi",
+    "team": "People & Culture",
+    "joinDate": "2026-08-06",
+    "weeklyGoals": {
+      "activeDays": 5,
+      "points": 500
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-kabir",
+    "name": "Kabir Singh",
+    "email": "kabir.singh@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-04.svg",
+    "headline": "Data analyst · Cycling commuter",
+    "bio": "I cycle to work whenever the weather allows and track everything in spreadsheets, obviously.",
+    "location": "Chandigarh",
+    "team": "Analytics",
+    "joinDate": "2026-06-25",
+    "weeklyGoals": {
+      "activeDays": 4,
+      "points": 450
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-sara",
+    "name": "Sara Thomas",
+    "email": "sara.thomas@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-05.svg",
+    "headline": "Content strategist · Journal keeper",
+    "bio": "Writing is my mindfulness. Trying to swap late-night scrolling for early nights.",
+    "location": "Mumbai",
+    "team": "Marketing",
+    "joinDate": "2026-09-13",
+    "weeklyGoals": {
+      "activeDays": 5,
+      "points": 400
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": false
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-arjun",
+    "name": "Arjun Iyer",
+    "email": "arjun.iyer@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-06.svg",
+    "headline": "QA lead · Step counter enthusiast",
+    "bio": "Walking meetings converted me. If a call does not need a screen, I take it on foot.",
+    "location": "Chennai",
+    "team": "Quality Engineering",
+    "joinDate": "2026-08-16",
+    "weeklyGoals": {
+      "activeDays": 5,
+      "points": 500
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-meher",
+    "name": "Meher Kaur",
+    "email": "meher.kaur@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-07.svg",
+    "headline": "Finance associate · New to wellness",
+    "bio": "Joined Wellnest to build better habits. Hydration is my first win.",
+    "location": "Amritsar",
+    "team": "Finance",
+    "joinDate": "2026-10-13",
+    "weeklyGoals": {
+      "activeDays": 4,
+      "points": 300
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-daniel",
+    "name": "Daniel Fernandes",
+    "email": "daniel.fernandes@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-08.svg",
+    "headline": "Sales manager · Gym regular",
+    "bio": "Early gym sessions, healthy lunches and the occasional walk-and-talk with my team.",
+    "location": "Goa",
+    "team": "Sales",
+    "joinDate": "2026-07-25",
+    "weeklyGoals": {
+      "activeDays": 5,
+      "points": 550
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-zoya",
+    "name": "Zoya Khan",
+    "email": "zoya.khan@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-09.svg",
+    "headline": "UX researcher · Mindful mornings",
+    "bio": "Ten quiet minutes before the day begins changed everything for me.",
+    "location": "Hyderabad",
+    "team": "Research",
+    "joinDate": "2026-08-24",
+    "weeklyGoals": {
+      "activeDays": 6,
+      "points": 450
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-vikram",
+    "name": "Vikram Rao",
+    "email": "vikram.rao@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-10.svg",
+    "headline": "Engineering manager · Prefers privacy",
+    "bio": "Quietly consistent. I like tracking progress but keep my results to myself.",
+    "location": "Mysuru",
+    "team": "Mobile Engineering",
+    "joinDate": "2026-06-15",
+    "weeklyGoals": {
+      "activeDays": 6,
+      "points": 700
+    },
+    "privacy": {
+      "profileVisible": false,
+      "leaderboardVisible": false,
+      "activityVisible": false
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-isha",
+    "name": "Isha Gupta",
+    "email": "isha.gupta@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-11.svg",
+    "headline": "Customer success · Stretch break champion",
+    "bio": "I set stretch reminders for my whole team. You are welcome.",
+    "location": "Jaipur",
+    "team": "Customer Success",
+    "joinDate": "2026-09-28",
+    "weeklyGoals": {
+      "activeDays": 5,
+      "points": 400
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-neel",
+    "name": "Neel Banerjee",
+    "email": "neel.banerjee@brightside.example",
+    "role": "participant",
+    "avatar": "static/assets/images/avatars/avatar-12.svg",
+    "headline": "Intern · Exploring every challenge",
+    "bio": "First job, first wellness program. Trying a little of everything.",
+    "location": "Kolkata",
+    "team": "Engineering Internship",
+    "joinDate": "2026-10-22",
+    "weeklyGoals": {
+      "activeDays": 4,
+      "points": 350
+    },
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  },
+  {
+    "id": "u-meera",
+    "name": "Meera Kapoor",
+    "email": "meera.kapoor@brightside.example",
+    "role": "organizer",
+    "avatar": "static/assets/images/avatars/avatar-13.svg",
+    "headline": "Wellbeing program lead",
+    "bio": "I design challenges that make healthy habits feel social, simple and fun.",
+    "location": "New Delhi",
+    "team": "Brightside Wellbeing Office",
+    "joinDate": "2026-04-26",
+    "weeklyGoals": {
+      "activeDays": 4,
+      "points": 300
+    },
+    "organization": "Brightside Collective",
+    "privacy": {
+      "profileVisible": true,
+      "leaderboardVisible": true,
+      "activityVisible": true
+    },
+    "badgeUnlocks": {}
+  }
+]

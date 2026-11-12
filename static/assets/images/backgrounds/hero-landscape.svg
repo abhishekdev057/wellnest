@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" role="img">
+<defs>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6EADC"/><stop offset=".6" stop-color="#F3F0E0"/><stop offset="1" stop-color="#F1ECE3"/></linearGradient>
+<radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#E2B48F"/><stop offset=".7" stop-color="#E8C7B5"/><stop offset="1" stop-color="#E8C7B5" stop-opacity="0"/></radialGradient>
+<clipPath id="b"><path d="M320 10c150 0 300 70 310 230 10 170-90 340-300 350C110 600 0 470 10 290 18 130 170 10 320 10z"/></clipPath>
+</defs>
+<g clip-path="url(#b)">
+<rect width="640" height="600" fill="url(#s)"/>
+<circle cx="420" cy="210" r="140" fill="url(#sun)"/>
+<circle cx="420" cy="210" r="70" fill="#E2B48F"/>
+<g fill="#fff" opacity=".75"><ellipse cx="160" cy="150" rx="60" ry="14"/><ellipse cx="200" cy="136" rx="40" ry="16"/><ellipse cx="520" cy="110" rx="40" ry="10"/></g>
+<path d="M0 360 C120 300 240 320 340 350 S520 300 640 330 V600 H0Z" fill="#D9CBB2"/>
+<path d="M0 420 C140 370 280 390 400 420 S560 380 640 400 V600 H0Z" fill="#AD977A"/>
+<path d="M0 490 C160 450 320 470 460 490 S600 470 640 480 V600 H0Z" fill="#4E5747"/>
+<path d="M0 540 C160 520 360 530 640 540 V600 H0Z" fill="#1A1D26"/>
+<path d="M300 600 C340 540 240 500 300 460 S420 420 380 380" fill="none" stroke="#FAF5EC" stroke-width="14" stroke-linecap="round" opacity=".9"/>
+<g transform="translate(110 400)"><rect x="-4" y="0" width="8" height="40" fill="#5E4A3A"/><circle cy="-30" r="36" fill="#6E775E"/><circle cx="-14" cy="-42" r="14" fill="#fff" opacity=".12"/></g>
+<g transform="translate(170 420) scale(.7)"><rect x="-4" y="0" width="8" height="40" fill="#5E4A3A"/><circle cy="-30" r="36" fill="#4E5747"/></g>
+<g transform="translate(540 410)"><rect x="-4" y="0" width="8" height="34" fill="#5E4A3A"/><path d="M0 -90 L34 6 H-34Z" fill="#4E5747"/><path d="M0 -120 L26 -40 H-26Z" fill="#6E775E"/></g>
+<g transform="translate(590 425) scale(.7)"><rect x="-4" y="0" width="8" height="34" fill="#5E4A3A"/><path d="M0 -90 L34 6 H-34Z" fill="#4E5747"/></g>
+<g fill="#DCC39A"><path d="M60 250c20-30 50-34 70-26-14 26-44 36-70 26z"/><path d="M520 300c18-24 44-26 60-18-12 20-38 28-60 18z" opacity=".8"/></g>
+</g>
+</svg>

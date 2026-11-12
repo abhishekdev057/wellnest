@@ -1,0 +1,395 @@
+[
+  {
+    "id": "enr-001",
+    "userId": "u-ananya",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-002",
+    "userId": "u-ananya",
+    "challengeId": "step-up-sprint",
+    "enrolledAt": "2026-11-01",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-003",
+    "userId": "u-ananya",
+    "challengeId": "hydration-habit",
+    "enrolledAt": "2026-11-04",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-004",
+    "userId": "u-ananya",
+    "challengeId": "mindful-mornings",
+    "enrolledAt": "2026-10-26",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-005",
+    "userId": "u-ananya",
+    "challengeId": "gratitude-journal",
+    "enrolledAt": "2026-10-12",
+    "status": "completed",
+    "completedAt": "2026-10-28"
+  },
+  {
+    "id": "enr-006",
+    "userId": "u-rohan",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-007",
+    "userId": "u-rohan",
+    "challengeId": "step-up-sprint",
+    "enrolledAt": "2026-11-01",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-008",
+    "userId": "u-rohan",
+    "challengeId": "desk-stretch-breaks",
+    "enrolledAt": "2026-11-08",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-009",
+    "userId": "u-rohan",
+    "challengeId": "5k-run-club",
+    "enrolledAt": "2026-11-12",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-010",
+    "userId": "u-rohan",
+    "challengeId": "autumn-ride",
+    "enrolledAt": "2026-09-01",
+    "status": "completed",
+    "completedAt": "2026-09-12"
+  },
+  {
+    "id": "enr-011",
+    "userId": "u-rohan",
+    "challengeId": "mindful-mornings",
+    "enrolledAt": "2026-10-29",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-012",
+    "userId": "u-priya",
+    "challengeId": "desk-stretch-breaks",
+    "enrolledAt": "2026-11-08",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-013",
+    "userId": "u-priya",
+    "challengeId": "hydration-habit",
+    "enrolledAt": "2026-11-03",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-014",
+    "userId": "u-priya",
+    "challengeId": "mindful-mornings",
+    "enrolledAt": "2026-10-26",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-015",
+    "userId": "u-priya",
+    "challengeId": "healthy-plate",
+    "enrolledAt": "2026-11-04",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-016",
+    "userId": "u-priya",
+    "challengeId": "gratitude-journal",
+    "enrolledAt": "2026-10-12",
+    "status": "completed",
+    "completedAt": "2026-10-26"
+  },
+  {
+    "id": "enr-017",
+    "userId": "u-kabir",
+    "challengeId": "autumn-ride",
+    "enrolledAt": "2026-09-01",
+    "status": "completed",
+    "completedAt": "2026-09-10"
+  },
+  {
+    "id": "enr-018",
+    "userId": "u-kabir",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-06",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-019",
+    "userId": "u-kabir",
+    "challengeId": "5k-run-club",
+    "enrolledAt": "2026-11-12",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-020",
+    "userId": "u-kabir",
+    "challengeId": "step-up-sprint",
+    "enrolledAt": "2026-11-03",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-021",
+    "userId": "u-sara",
+    "challengeId": "screen-free-evenings",
+    "enrolledAt": "2026-11-02",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-022",
+    "userId": "u-sara",
+    "challengeId": "gratitude-journal",
+    "enrolledAt": "2026-10-12",
+    "status": "completed",
+    "completedAt": "2026-10-30"
+  },
+  {
+    "id": "enr-023",
+    "userId": "u-sara",
+    "challengeId": "mindful-mornings",
+    "enrolledAt": "2026-10-28",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-024",
+    "userId": "u-arjun",
+    "challengeId": "step-up-sprint",
+    "enrolledAt": "2026-11-01",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-025",
+    "userId": "u-arjun",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-026",
+    "userId": "u-arjun",
+    "challengeId": "walk-and-talk",
+    "enrolledAt": "2026-11-01",
+    "status": "completed",
+    "completedAt": "2026-11-07"
+  },
+  {
+    "id": "enr-027",
+    "userId": "u-arjun",
+    "challengeId": "hydration-habit",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-028",
+    "userId": "u-meher",
+    "challengeId": "hydration-habit",
+    "enrolledAt": "2026-11-03",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-029",
+    "userId": "u-meher",
+    "challengeId": "healthy-plate",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-030",
+    "userId": "u-daniel",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-031",
+    "userId": "u-daniel",
+    "challengeId": "healthy-plate",
+    "enrolledAt": "2026-11-04",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-032",
+    "userId": "u-daniel",
+    "challengeId": "walk-and-talk",
+    "enrolledAt": "2026-11-01",
+    "status": "completed",
+    "completedAt": "2026-11-06"
+  },
+  {
+    "id": "enr-033",
+    "userId": "u-daniel",
+    "challengeId": "5k-run-club",
+    "enrolledAt": "2026-11-12",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-034",
+    "userId": "u-zoya",
+    "challengeId": "mindful-mornings",
+    "enrolledAt": "2026-10-26",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-035",
+    "userId": "u-zoya",
+    "challengeId": "screen-free-evenings",
+    "enrolledAt": "2026-11-03",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-036",
+    "userId": "u-zoya",
+    "challengeId": "gratitude-journal",
+    "enrolledAt": "2026-10-12",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-037",
+    "userId": "u-vikram",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-05",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-038",
+    "userId": "u-vikram",
+    "challengeId": "step-up-sprint",
+    "enrolledAt": "2026-11-01",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-039",
+    "userId": "u-vikram",
+    "challengeId": "mindful-mornings",
+    "enrolledAt": "2026-10-26",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-040",
+    "userId": "u-vikram",
+    "challengeId": "autumn-ride",
+    "enrolledAt": "2026-09-01",
+    "status": "completed",
+    "completedAt": "2026-09-11"
+  },
+  {
+    "id": "enr-041",
+    "userId": "u-isha",
+    "challengeId": "desk-stretch-breaks",
+    "enrolledAt": "2026-11-08",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-042",
+    "userId": "u-isha",
+    "challengeId": "hydration-habit",
+    "enrolledAt": "2026-11-03",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-043",
+    "userId": "u-isha",
+    "challengeId": "screen-free-evenings",
+    "enrolledAt": "2026-11-02",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-044",
+    "userId": "u-neel",
+    "challengeId": "movement-week",
+    "enrolledAt": "2026-11-07",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-045",
+    "userId": "u-neel",
+    "challengeId": "hydration-habit",
+    "enrolledAt": "2026-11-06",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-046",
+    "userId": "u-neel",
+    "challengeId": "healthy-plate",
+    "enrolledAt": "2026-11-06",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-047",
+    "userId": "u-neel",
+    "challengeId": "desk-stretch-breaks",
+    "enrolledAt": "2026-11-09",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-048",
+    "userId": "u-neel",
+    "challengeId": "5k-run-club",
+    "enrolledAt": "2026-11-12",
+    "status": "active",
+    "completedAt": null
+  },
+  {
+    "id": "enr-049",
+    "userId": "u-meher",
+    "challengeId": "screen-free-evenings",
+    "enrolledAt": "2026-11-03",
+    "status": "left",
+    "completedAt": null,
+    "leftAt": "2026-11-06"
+  }
+]

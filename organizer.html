@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organizer dashboard · Wellnest</title>
+  <meta name="description" content="Wellnest organizer workspace: create and manage wellness challenges, follow participants and review participation analytics.">
+  <meta name="theme-color" content="#1A1D26">
+  <link rel="icon" href="static/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/pages.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <script src="static/js/theme-init.js"></script>
+  <script type="module" src="static/js/pages/organizer.js"></script>
+</head>
+<body data-page="organizer" class="organizer-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <div class="container">
+      <p class="banner banner--role" role="note">
+        <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#info"></use></svg>
+        <span><strong>Organizer workspace — simulated role.</strong> This is a front-end demonstration: there is no login or real authorization. <a href="dashboard.html">Switch to participant view</a></span>
+      </p>
+
+      <section class="page-intro page-intro--compact organizer-intro" aria-labelledby="page-title">
+        <div class="page-intro__text">
+          <p class="eyebrow" data-organizer-org>Organizer</p>
+          <h1 id="page-title">Organizer dashboard</h1>
+          <p class="lead">Design challenges, keep an eye on participation and understand what is working — all from one place.</p>
+        </div>
+        <div class="organizer-identity" data-organizer-identity></div>
+      </section>
+
+      <div class="tabs" role="tablist" aria-label="Organizer sections" data-organizer-tabs>
+        <button type="button" class="tab" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">
+          <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#grid"></use></svg>Overview
+        </button>
+        <button type="button" class="tab" role="tab" id="tab-challenges" aria-controls="panel-challenges" aria-selected="false" tabindex="-1" data-tab="challenges">
+          <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#flag"></use></svg>Challenges
+        </button>
+        <button type="button" class="tab" role="tab" id="tab-participants" aria-controls="panel-participants" aria-selected="false" tabindex="-1" data-tab="participants">
+          <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#users"></use></svg>Participants
+        </button>
+        <button type="button" class="tab" role="tab" id="tab-analytics" aria-controls="panel-analytics" aria-selected="false" tabindex="-1" data-tab="analytics">
+          <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#chart"></use></svg>Analytics
+        </button>
+      </div>
+
+      <!-- Overview -->
+      <section class="tab-panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+        <h2 class="visually-hidden">Overview</h2>
+        <div class="stat-grid" data-org="stats">
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+          <div class="skeleton skeleton--tile"></div>
+        </div>
+        <div class="org-grid">
+          <section class="panel org-grid__wide" aria-labelledby="trend-title">
+            <div class="panel__header">
+              <div>
+                <h3 id="trend-title">Participation trend</h3>
+                <p>Activities logged per day · last 30 days</p>
+              </div>
+              <span class="pill" data-org="trend-total"></span>
+            </div>
+            <div data-org="trend"><div class="skeleton skeleton--tile"></div></div>
+          </section>
+          <section class="panel" aria-labelledby="attention-title">
+            <div class="panel__header">
+              <div>
+                <h3 id="attention-title">Needs attention</h3>
+                <p>Drafts, paused and ending challenges</p>
+              </div>
+            </div>
+            <div data-org="attention"></div>
+          </section>
+          <section class="panel" aria-labelledby="popular-title">
+            <div class="panel__header">
+              <div>
+                <h3 id="popular-title">Most popular challenges</h3>
+                <p>By number of participants</p>
+              </div>
+            </div>
+            <div data-org="popular"></div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Challenge management -->
+      <section class="tab-panel" id="panel-challenges" role="tabpanel" aria-labelledby="tab-challenges" tabindex="0" hidden>
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Challenge management</h2>
+            <p class="muted small">Create, edit, activate, pause, archive or delete draft challenges.</p>
+          </div>
+          <button type="button" class="btn btn--primary" data-action="new-challenge">
+            <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#plus"></use></svg> New challenge
+          </button>
+        </div>
+        <form class="toolbar" role="search" aria-label="Filter challenges" data-org-challenge-filters>
+          <div class="search-input toolbar__search">
+            <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#search"></use></svg>
+            <label for="org-challenge-search" class="visually-hidden">Search challenges</label>
+            <input class="input" type="search" id="org-challenge-search" name="q" placeholder="Search challenges" maxlength="60">
+          </div>
+          <div class="field field--inline">
+            <label for="org-challenge-status">Status</label>
+            <select class="select" id="org-challenge-status" name="status">
+              <option value="all">All</option>
+              <option value="draft">Draft</option>
+              <option value="active">Active</option>
+              <option value="upcoming">Upcoming</option>
+              <option value="paused">Paused</option>
+              <option value="completed">Ended</option>
+              <option value="archived">Archived</option>
+            </select>
+          </div>
+        </form>
+        <div data-org="challenges" aria-live="polite"></div>
+      </section>
+
+      <!-- Participant management -->
+      <section class="tab-panel" id="panel-participants" role="tabpanel" aria-labelledby="tab-participants" tabindex="0" hidden>
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Participants</h2>
+            <p class="muted small">Inspect enrollment and participation for every member.</p>
+          </div>
+        </div>
+        <form class="toolbar" role="search" aria-label="Filter participants" data-org-participant-filters>
+          <div class="search-input toolbar__search">
+            <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#search"></use></svg>
+            <label for="org-participant-search" class="visually-hidden">Search participants</label>
+            <input class="input" type="search" id="org-participant-search" name="q" placeholder="Search by name or team" maxlength="40">
+          </div>
+          <div class="field field--inline">
+            <label for="org-participant-filter">Engagement</label>
+            <select class="select" id="org-participant-filter" name="engagement">
+              <option value="all">Everyone</option>
+              <option value="active">Active this week</option>
+              <option value="inactive">Inactive this week</option>
+              <option value="unenrolled">Not enrolled</option>
+            </select>
+          </div>
+        </form>
+        <div data-org="participants"></div>
+      </section>
+
+      <!-- Analytics -->
+      <section class="tab-panel" id="panel-analytics" role="tabpanel" aria-labelledby="tab-analytics" tabindex="0" hidden>
+        <h2 class="visually-hidden">Analytics</h2>
+        <div class="org-grid" data-org="analytics"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <div id="sr-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

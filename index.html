@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wellnest — Wellness challenges that build lasting habits</title>
+  <meta name="description" content="Wellnest is a wellness challenge platform where organizations create non-clinical challenges and participants log activities, earn points, unlock achievements and climb leaderboards.">
+  <meta name="theme-color" content="#1A1D26">
+  <link rel="icon" href="static/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/pages.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <script src="static/js/theme-init.js"></script>
+  <script type="module" src="static/js/pages/home.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header site-header--landing" id="site-header"></header>
+
+  <main id="main" class="site-main site-main--flush" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Wellness challenges for teams &amp; campuses</p>
+          <h1 id="hero-title" class="hero__title">Small habits. <em>Shared momentum.</em> A healthier rhythm.</h1>
+          <p class="lead">Wellnest turns everyday wellbeing into friendly challenges. Join a walking sprint, build a hydration habit or find ten quiet minutes each morning — then watch your progress, streaks and achievements grow.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="challenges.html">Explore challenges
+              <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#arrow-right"></use></svg>
+            </a>
+            <a class="btn btn--lg" href="dashboard.html">View dashboard</a>
+          </div>
+          <div class="hero__social" data-hero-social>
+            <div class="avatar-stack" data-hero-avatars></div>
+            <p class="small muted"><strong data-hero-members>—</strong> members are building better habits right now</p>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <img class="hero__art" src="static/assets/images/backgrounds/hero-landscape.svg" alt="" width="640" height="600">
+          <div class="float-card float-card--ring">
+            <div data-hero-ring></div>
+            <div>
+              <p class="float-card__label">Current challenge</p>
+              <p class="float-card__title" data-hero-challenge>Movement Week</p>
+            </div>
+          </div>
+          <div class="float-card float-card--streak">
+            <span class="float-card__icon"><svg class="icon"><use href="static/assets/icons/sprite.svg#flame"></use></svg></span>
+            <div>
+              <p class="float-card__title"><span data-hero-streak>0</span>-day streak</p>
+              <p class="float-card__label">Keep it going!</p>
+            </div>
+          </div>
+          <div class="float-card float-card--badge">
+            <img src="static/assets/images/badges/consistency-champion.svg" alt="" width="44" height="44" data-hero-badge-img>
+            <div>
+              <p class="float-card__label">Badge unlocked</p>
+              <p class="float-card__title" data-hero-badge>Consistency Champion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform statistics -->
+    <section class="stats-band" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title" class="visually-hidden">Platform statistics</h2>
+        <dl class="stats-band__grid" data-platform-stats>
+          <div><dt>Active challenges</dt><dd data-stat="challenges">—</dd></div>
+          <div><dt>Participants</dt><dd data-stat="participants">—</dd></div>
+          <div><dt>Activities logged</dt><dd data-stat="activities">—</dd></div>
+          <div><dt>Points earned</dt><dd data-stat="points">—</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Featured challenges -->
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Featured this month</p>
+            <h2 id="featured-title">Challenges worth joining</h2>
+          </div>
+          <a class="link-btn" href="challenges.html">View all challenges
+            <svg class="icon" aria-hidden="true"><use href="static/assets/icons/sprite.svg#arrow-right"></use></svg>
+          </a>
+        </div>
+        <div class="card-grid" data-featured-challenges aria-live="polite">
+          <div class="skeleton skeleton--card"></div>
+          <div class="skeleton skeleton--card"></div>
+          <div class="skeleton skeleton--card"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--tinted" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2 id="how-title">Four simple steps to a healthier routine</h2>
+            <p class="lead">No complicated plans or clinical tracking — just friendly goals, honest logging and a little healthy competition.</p>
+          </div>
+        </div>
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="step__number">01</span>
+            <h3>Join a challenge</h3>
+            <p>Pick from movement, hydration, mindfulness and healthy-habit challenges designed by your organizer.</p>
+          </li>
+          <li class="step">
+            <span class="step__number">02</span>
+            <h3>Log your activities</h3>
+            <p>Record walks, water, meditation or stretch breaks in seconds — from any page, on any device.</p>
+          </li>
+          <li class="step">
+            <span class="step__number">03</span>
+            <h3>Earn points &amp; streaks</h3>
+            <p>Every valid activity earns points. Stay active on consecutive days to grow your streak.</p>
+          </li>
+          <li class="step">
+            <span class="step__number">04</span>
+            <h3>Celebrate progress</h3>
+            <p>Complete challenges for bonus points, unlock badges and see how you rank with your community.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Wellness categories</p>
+            <h2 id="categories-title">Something for every kind of wellbeing</h2>
+          </div>
+        </div>
+        <ul class="category-grid" role="list" data-categories></ul>
+      </div>
+    </section>
+
+    <!-- Achievements & leaderboard preview -->
+    <section class="section section--dark" aria-labelledby="community-title">
+      <div class="container community">
+        <div class="community__intro">
+          <p class="eyebrow eyebrow--light">Achievements &amp; rankings</p>
+          <h2 id="community-title">Progress you can see. Wins you can share.</h2>
+          <p class="lead">Badges reward milestones like your first activity, a three-day streak or finishing a challenge. Leaderboards celebrate consistency — and respect members who prefer to stay private.</p>
+          <div class="badge-showcase" data-badge-showcase></div>
+          <a class="btn btn--accent" href="leaderboard.html">See the full leaderboard</a>
+        </div>
+        <div class="leader-preview" aria-labelledby="leader-preview-title">
+          <div class="split">
+            <h3 id="leader-preview-title">Top members this week</h3>
+            <span class="pill">Last 7 days</span>
+          </div>
+          <ol class="leader-preview__list" role="list" data-leader-preview>
+            <li class="skeleton skeleton--text"></li>
+            <li class="skeleton skeleton--text"></li>
+            <li class="skeleton skeleton--text"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <div>
+            <p class="eyebrow">Why Wellnest</p>
+            <h2 id="benefits-title">Built for people — and the teams that support them</h2>
+          </div>
+        </div>
+        <div class="benefits">
+          <article class="benefit">
+            <span class="benefit__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="static/assets/icons/sprite.svg#heart"></use></svg></span>
+            <h3>Habits that actually stick</h3>
+            <p>Short, achievable challenges and visible streaks make it easier to keep going after the first week.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="static/assets/icons/sprite.svg#users"></use></svg></span>
+            <h3>Motivation through community</h3>
+            <p>Friendly leaderboards and shared challenges turn colleagues and classmates into encouraging teammates.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="static/assets/icons/sprite.svg#shield"></use></svg></span>
+            <h3>Privacy by default</h3>
+            <p>Choose whether your profile, activities and rankings are visible. No medical or clinical data is ever collected.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="static/assets/icons/sprite.svg#chart"></use></svg></span>
+            <h3>Insights for organizers</h3>
+            <p>Create challenges in minutes and follow participation, engagement and completion in a clear dashboard.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final call to action -->
+    <section class="section section--flush-top" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2 id="cta-title">Ready for your first challenge?</h2>
+            <p>Join in seconds and log your first activity today. Your future self will thank you.</p>
+          </div>
+          <div class="cluster">
+            <a class="btn btn--accent btn--lg" href="challenges.html">Explore challenges</a>
+            <a class="btn btn--lg btn--on-dark" href="organizer.html">Create a challenge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <div id="sr-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
