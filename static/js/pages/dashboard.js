@@ -44,7 +44,6 @@ function renderWelcome(user, stats) {
       </div>
     </div>
     <div class="welcome__actions">
-      <button type="button" class="btn btn--primary btn--lg" data-action="log-activity">${icon('plus')} Log activity</button>
       <a class="btn btn--lg" href="challenges.html">Browse challenges</a>
     </div>`;
 }
