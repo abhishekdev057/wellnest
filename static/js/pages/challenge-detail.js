@@ -170,7 +170,7 @@ function renderProgressPanel(state, challenge, enrollment) {
   const remaining = getTimeRemaining(challenge);
   const completed = enrollment.status === 'completed';
   return `
-    <section class="panel progress-panel ${completed ? 'progress-panel--complete' : ''}" id="progress" aria-labelledby="progress-title" tabindex="-1">
+    <section class="panel progress-panel ${completed ? 'progress-panel--complete' : ''}" data-category="${escapeHTML(challenge.category)}" id="progress" aria-labelledby="progress-title" tabindex="-1">
       <div class="split">
         <h2 id="progress-title" class="panel-title-sm">Your progress</h2>
         ${completed ? '<span class="status" data-status="completed">Completed</span>' : '<span class="status" data-status="joined">Enrolled</span>'}

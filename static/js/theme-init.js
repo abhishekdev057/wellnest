@@ -14,4 +14,7 @@
   var isDark = preference === 'dark' || (preference === 'system' && prefersDark);
   document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme-preference', preference);
+  // Mobile browser toolbars match the page background from the first paint.
+  var themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.setAttribute('content', isDark ? '#0e0f13' : '#f8f5ef');
 })();

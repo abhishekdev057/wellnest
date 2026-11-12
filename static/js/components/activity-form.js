@@ -43,7 +43,7 @@ function buildFormMarkup(selectedType) {
 
       <fieldset>
         <legend class="required">Activity type</legend>
-        <div class="option-grid">${typeOptionsMarkup(selectedType)}</div>
+        <div class="option-grid option-grid--types">${typeOptionsMarkup(selectedType)}</div>
         ${fieldError(FORM_ID, 'type')}
       </fieldset>
 

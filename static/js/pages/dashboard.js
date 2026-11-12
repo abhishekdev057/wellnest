@@ -87,7 +87,7 @@ function renderWeek(state, user, stats, activeItems) {
           ${progressRing(percent(stats.weekActiveDays, goals.activeDays), { size: 112, label: `${stats.weekActiveDays}/${goals.activeDays}`, sublabel: 'active days' })}
         </div>
         <div class="week__ring">
-          ${progressRing(percent(stats.weekPoints, goals.points), { size: 112, label: formatNumber(stats.weekPoints), sublabel: `of ${formatNumber(goals.points)} pts`, category: 'hydration' })}
+          ${progressRing(percent(stats.weekPoints, goals.points), { size: 112, label: formatNumber(stats.weekPoints), sublabel: `of ${formatNumber(goals.points)} pts`, className: 'ring--ink' })}
         </div>
       </div>
       <div class="week__chart">

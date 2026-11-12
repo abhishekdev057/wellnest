@@ -2300,12 +2300,22 @@ body.has-modal {
 :root[data-theme="dark"] .btn--primary {
   background-image: var(--gradient-gold);
   border-color: transparent;
-  box-shadow: 0 8px 22px -12px rgba(201, 168, 116, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 6px 16px -10px rgba(201, 168, 116, 0.45);
 }
 
 :root[data-theme="dark"] .stat--feature {
-  background: linear-gradient(145deg, #2b2519 0%, #1b1d24 75%);
+  background: linear-gradient(160deg, #242019 0%, #1a1c23 70%);
   border-color: #3a3223;
+}
+
+/* Second ring on the dashboard uses ink (light) / stone (dark) so both rings
+   stay inside the brand palette. */
+:root .ring--ink .ring__value { stroke: var(--ink-600); }
+:root[data-theme="dark"] .ring--ink .ring__value { stroke: var(--stone-300); }
+
+/* A challenge's progress bar uses the same category colour as its ring. */
+.progress-panel[data-category] .progress:not([data-complete="true"]) {
+  --bar: var(--cat);
 }
 
 :root[data-theme="dark"] .stats-band,

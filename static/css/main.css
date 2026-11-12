@@ -247,7 +247,27 @@ body {
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  transition: background-color var(--duration) ease, color var(--duration) ease;
+}
+
+/* Native controls (checkboxes, radios, range, date pickers) and scrollbars
+   follow the brand palette in both themes. */
+:root {
+  accent-color: var(--gold-600);
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
+:root[data-theme="dark"] {
+  accent-color: var(--gold-300);
+}
+
+/* While the theme is being switched, every transition is paused for one frame
+   so the whole page changes at once instead of components fading at
+   different speeds. */
+.theme-switching,
+.theme-switching *,
+.theme-switching *::before,
+.theme-switching *::after {
+  transition: none !important;
 }
 
 img,

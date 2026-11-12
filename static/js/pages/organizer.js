@@ -271,7 +271,7 @@ function openChallengeForm(existingId = null) {
 
         <fieldset>
           <legend class="required">Accepted activities</legend>
-          <div class="option-grid">${typeChecks}</div>
+          <div class="option-grid option-grid--types">${typeChecks}</div>
           ${fieldError(FORM_ID, 'activityTypes')}
         </fieldset>
 

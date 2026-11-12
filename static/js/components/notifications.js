@@ -95,14 +95,21 @@ function checkDueReminders() {
   }
   const alerted = sessionGet('alerted_reminders', []);
   const today = toDateKey();
-  getUserReminders(state, user.id)
+  const fresh = getUserReminders(state, user.id)
     .filter((r) => getReminderStatus(r) === 'due')
-    .forEach((reminder) => {
-      const key = `${reminder.id}:${today}`;
-      if (alerted.includes(key)) return;
-      alerted.push(key);
-      showToast({ type: 'info', title: `Reminder: ${reminder.title}`, message: reminder.note || `Scheduled for ${formatClock(reminder.time)}.`, duration: 7000 });
-    });
+    .filter((r) => !alerted.includes(`${r.id}:${today}`));
+  fresh.forEach((r) => alerted.push(`${r.id}:${today}`));
+
+  // One reminder gets its own toast; several due at once are grouped into a
+  // single summary so the page never opens under a stack of notifications.
+  if (fresh.length === 1) {
+    const [reminder] = fresh;
+    showToast({ type: 'info', title: `Reminder: ${reminder.title}`, message: reminder.note || `Scheduled for ${formatClock(reminder.time)}.`, duration: 7000 });
+  } else if (fresh.length > 1) {
+    const names = fresh.map((r) => r.title);
+    const list = names.length > 3 ? `${names.slice(0, 2).join(', ')} and ${names.length - 2} more` : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+    showToast({ type: 'info', title: `${fresh.length} reminders due`, message: `${list}. Open the bell to review them.`, duration: 8000 });
+  }
   sessionSet('alerted_reminders', alerted.slice(-50));
   refreshNotifications();
 }

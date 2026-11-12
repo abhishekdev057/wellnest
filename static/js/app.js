@@ -95,8 +95,18 @@ const darkQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: 
 /** Resolve "system" to light/dark and set it on <html>. */
 export function applyTheme(preference = 'system') {
   const isDark = preference === 'dark' || (preference === 'system' && darkQuery && darkQuery.matches);
-  document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
-  document.documentElement.dataset.themePreference = preference;
+  const root = document.documentElement;
+  const changed = root.dataset.theme !== (isDark ? 'dark' : 'light');
+  if (changed) {
+    // Switch every colour in the same frame (see .theme-switching in main.css).
+    root.classList.add('theme-switching');
+    requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove('theme-switching')));
+  }
+  root.dataset.theme = isDark ? 'dark' : 'light';
+  root.dataset.themePreference = preference;
+  // Mobile browser toolbars match the page background.
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.setAttribute('content', isDark ? '#0e0f13' : '#f8f5ef');
   try {
     localStorage.setItem(THEME_KEY, preference);
   } catch (error) {
